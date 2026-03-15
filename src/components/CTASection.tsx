@@ -12,7 +12,7 @@ const CTASection = () => {
           This is your session — your comfort, your pace, your needs. Ready to start feeling better? Book your first appointment today.
         </p>
         <a
-          href="mailto:hello@akintomidejumoke.com"
+          href="mailto:info@ajpt.ca"
           className="inline-block border border-primary-foreground px-10 py-3.5 text-xs font-sans tracking-[0.2em] uppercase text-primary-foreground hover:bg-primary-foreground hover:text-foreground transition-colors"
         >
           Book a Session
