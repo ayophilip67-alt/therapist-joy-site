@@ -18,10 +18,24 @@
     <meta name="twitter:site" content="@ajpt_ca" />
     <meta name="twitter:image" content="https://ajpt.ca/og-image.jpg" />
     <script type="module" crossorigin src="/assets/index-BFCA-teG.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const buttons = Array.from(document.querySelectorAll("a, button"));
+        const target = buttons.find((el) => {
+          const text = el.textContent?.trim().toLowerCase();
+          return text && text.includes("learn more");
+        });
+
+        if (target) {
+          target.setAttribute("href", "services.html");
+      }
+      });
+    </script>
     <link rel="stylesheet" crossorigin href="/assets/index-ByDH7WZn.css">
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
+
   </body>
 </html>
