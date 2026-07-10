@@ -1,24 +1,5 @@
 import { Link } from 'react-router-dom';
 
-const serviceCards = [
-  {
-    title: 'In-home Physiotherapy',
-    text: 'Treatment in a familiar environment where your everyday movement patterns and routines can be addressed directly.',
-  },
-  {
-    title: 'Personalised Rehabilitation',
-    text: 'Plans are shaped around your history, goals and pace so care feels practical, manageable and meaningful.',
-  },
-  {
-    title: 'Pain Education & Self-management',
-    text: 'Learn how your body responds to pain and build confidence with strategies you can use between sessions.',
-  },
-  {
-    title: 'Hands-on Care & Exercise',
-    text: 'A blend of movement guidance, manual therapy, and graded exercise to help you move more comfortably and confidently.',
-  },
-];
-
 export default function Services() {
   return (
     <main style={{ fontFamily: '"Jost", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', lineHeight: 1.6, color: '#1f2937', background: '#fff' }}>
@@ -55,47 +36,94 @@ export default function Services() {
         </div>
       </section>
 
-      <section style={{ padding: '64px 24px 92px' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.4rem' }}>
-          {serviceCards.map((card) => (
-            <div key={card.title} style={{ border: '1px solid #ece7dc', padding: '1.4rem', background: '#fff' }}>
-              <h2 style={{ fontSize: '1.2rem', margin: '0 0 0.75rem', color: '#111827' }}>{card.title}</h2>
-              <p style={{ color: '#4b5563', margin: 0, lineHeight: 1.7 }}>{card.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section id="expect" style={{ padding: '0 24px 64px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', background: '#f9f7f2', padding: '2.5rem', border: '1px solid #ece7dc' }}>
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>What to Expect</p>
             <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#111827' }}>What to Expect at Your First Visit</h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '1.5rem' }}>
-            {[
-              {
-                number: '01',
-                title: 'Share Your Story & History',
-                description: 'We begin by exploring your pain experience in detail, including how it started, how it affects your daily life, and what you’ve tried so far. We also focus on what matters most to you—what you want to return to, improve, or feel confident doing again.',
-              },
-              {
-                number: '02',
-                title: 'Movement and Functional Assessment',
-                description: 'Next, we assess how your body is moving and responding to load and activity. This may include observation of everyday movements, joint and soft tissue assessment, and testing strength, mobility, and control where appropriate.',
-              },
-              {
-                number: '03',
-                title: 'Creating your treatment plan',
-                description: 'I’ll provide education to help you better understand what may be contributing to your symptoms, and we’ll work together to outline a treatment plan that aligns with your specific goals.',
-              },
-            ].map((step) => (
-              <div key={step.number} style={{ textAlign: 'center' }}>
-                <span style={{ display: 'block', fontSize: '2.2rem', fontWeight: 300, color: '#9ca3af', marginBottom: '0.75rem' }}>{step.number}</span>
-                <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.75rem', color: '#111827' }}>{step.title}</h3>
-                <p style={{ color: '#4b5563', lineHeight: 1.7 }}>{step.description}</p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ background: '#fff', border: '1px solid #ece7dc', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ width: 48, height: 48, borderRadius: '999px', background: '#f9f7f2', border: '1px solid #ece7dc', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 4c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4Z" />
+                  <path d="M5 18c0-3.3 3.1-6 7-6s7 2.7 7 6" />
+                </svg>
               </div>
-            ))}
+              <div>
+                <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.6rem', color: '#111827' }}>How can I help?</h3>
+                <p style={{ color: '#4b5563', margin: 0, lineHeight: 1.7 }}>
+                  Every person’s experience with pain is unique, so treatment is always tailored to you. Depending on your goals and what feels most helpful, your care may include a combination of:
+                </p>
+              </div>
+              <ul style={{ margin: 0, paddingLeft: '1rem', color: '#4b5563', display: 'grid', gap: '0.45rem' }}>
+                <li>Movement and exercise therapy</li>
+                <li>Manual therapy techniques</li>
+                <li>Pain Education</li>
+                <li>Dry needling and acupuncture</li>
+                <li>Graded exposure to movement or activities</li>
+                <li>Pain Reprocessing Therapy</li>
+                <li>Lifestyle and habit support</li>
+                <li>Self-management strategies</li>
+              </ul>
+            </div>
+
+            <div style={{ background: '#fff', border: '1px solid #ece7dc', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ width: 48, height: 48, borderRadius: '999px', background: '#f9f7f2', border: '1px solid #ece7dc', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M3 10.5 12 4l9 6.5v8A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-8Z" />
+                  <path d="M9 20v-5h6v5" />
+                  <path d="M10.5 10.5h3" />
+                </svg>
+              </div>
+              <div>
+                <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.6rem', color: '#111827' }}>Why choose in-home physiotherapy?</h3>
+                <p style={{ color: '#4b5563', margin: 0, lineHeight: 1.7 }}>
+                  Because your home is where life happens. Treating you in your own environment allows me to see how you move through your daily routines and identify challenges that aren’t visible in a clinic. That means treatment can focus on:
+                </p>
+              </div>
+              <ul style={{ margin: 0, paddingLeft: '1rem', color: '#4b5563', display: 'grid', gap: '0.45rem' }}>
+                <li>Getting up from your favourite chair</li>
+                <li>Navigating stairs safely</li>
+                <li>Walking outdoors with confidence</li>
+                <li>Returning to gardening</li>
+                <li>Playing with grandchildren</li>
+                <li>Managing everyday activities that matter to you</li>
+              </ul>
+            </div>
+
+            <div style={{ background: '#fff', border: '1px solid #ece7dc', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ width: 48, height: 48, borderRadius: '999px', background: '#f9f7f2', border: '1px solid #ece7dc', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M4 7h16" />
+                  <path d="M7 7v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V7" />
+                  <path d="M9 4h6" />
+                  <path d="M10 11h4" />
+                  <path d="M10 14h4" />
+                </svg>
+              </div>
+              <div>
+                <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.6rem', color: '#111827' }}>How much do my services cost?</h3>
+              </div>
+              <div style={{ display: 'grid', gap: '0.8rem' }}>
+                <div style={{ borderBottom: '1px solid #ece7dc', paddingBottom: '0.7rem' }}>
+                  <p style={{ margin: '0 0 0.2rem', fontWeight: 600, color: '#111827' }}>First visit (60 minutes) — $150</p>
+                  <p style={{ margin: 0, color: '#4b5563', lineHeight: 1.6 }}>A comprehensive assessment to understand your pain, goals and create a personalized plan.</p>
+                </div>
+                <div style={{ borderBottom: '1px solid #ece7dc', paddingBottom: '0.7rem' }}>
+                  <p style={{ margin: '0 0 0.2rem', fontWeight: 600, color: '#111827' }}>Follow-Up Session (45 minutes) — $120</p>
+                  <p style={{ margin: 0, color: '#4b5563', lineHeight: 1.6 }}>Ongoing treatment focused on building progress and supporting your goals.</p>
+                </div>
+                <div>
+                  <p style={{ margin: '0 0 0.2rem', fontWeight: 600, color: '#111827' }}>Follow-Up Session with Acupuncture (45 minutes) — $135</p>
+                  <p style={{ margin: 0, color: '#4b5563', lineHeight: 1.6 }}>Includes all aspects of a follow-up session, with the option of acupuncture/dry needling as part of your care.</p>
+                </div>
+              </div>
+              <p style={{ margin: 0, color: '#4b5563', lineHeight: 1.7 }}>
+                Please note: Services are privately paid. Direct billing is not available at this time, but you will receive a receipt that you can submit to your insurance provider for reimbursement.
+              </p>
+            </div>
           </div>
         </div>
       </section>
