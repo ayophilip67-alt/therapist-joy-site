@@ -19,7 +19,7 @@ export default function Services() {
       </header>
 
       <section style={{ padding: '72px 24px 48px', background: '#f9f7f2' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '2rem', alignItems: 'center' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
           <div>
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Services</p>
             <h1 style={{ fontSize: 'clamp(2.2rem, 3.3vw, 3rem)', margin: '0 0 1rem', lineHeight: 1.15, color: '#111827' }}>Care that supports you where life happens.</h1>
@@ -31,7 +31,7 @@ export default function Services() {
             </p>
           </div>
           <div>
-            <img src="/assets/services.jpeg" alt="Physiotherapy treatment" style={{ width: '100%', height: '430px', objectFit: 'cover', display: 'block' }} />
+            <img src="/assets/services.jpeg" alt="Physiotherapy treatment" style={{ width: '100%', height: 'auto', maxHeight: '430px', objectFit: 'cover', display: 'block' }} />
           </div>
         </div>
       </section>

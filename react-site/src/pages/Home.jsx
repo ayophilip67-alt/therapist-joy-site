@@ -104,8 +104,8 @@ export default function Home() {
         </nav>
       </header>
 
-      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '120px 24px 80px', backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(/assets/banner.png)', backgroundSize: 'cover', backgroundPosition: 'center', color: '#fff' }}>
-        <div style={{ maxWidth: 960, textAlign: 'center' }}>
+      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '100px 20px 70px', backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(/assets/banner.png)', backgroundSize: 'cover', backgroundPosition: 'center top', color: '#fff' }}>
+        <div style={{ maxWidth: 960, width: '100%', textAlign: 'center' }}>
           <p style={{ textTransform: 'uppercase', letterSpacing: '0.3em', fontSize: '0.85rem', marginBottom: 16, opacity: 0.9 }}>Chronic Pain</p>
           <h1 style={{ fontSize: 'clamp(2.4rem, 4vw, 4.6rem)', lineHeight: 1.1, margin: '0 0 18px', fontWeight: 400, fontFamily: 'Halimun, Jost, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
             Healing at Home
@@ -126,7 +126,7 @@ export default function Home() {
       </div>
 
       <section id="services" style={{ padding: '80px 24px', background: '#f9f7f2' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '3rem', alignItems: 'center' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
           <div style={{ order: 2, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 4 }}>Services</p>
             <h2 style={{ fontSize: '2.2rem', margin: 0, lineHeight: 1.15, color: '#111827' }}>Care That Comes To You</h2>
@@ -150,15 +150,15 @@ export default function Home() {
             </Link>
           </div>
           <div style={{ order: 1 }}>
-            <img src="/assets/services.jpeg" alt="Physiotherapy treatment" style={{ width: '100%', height: '500px', objectFit: 'cover', display: 'block' }} />
+            <img src="/assets/services.jpeg" alt="Physiotherapy treatment" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'cover', display: 'block' }} />
           </div>
         </div>
       </section>
 
       <section id="about" style={{ padding: '80px 24px', background: '#fff' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '3rem', alignItems: 'center' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
           <div>
-            <img src="/assets/ajpicture.jpg" alt="Akintomide Jumoke, Physiotherapist" style={{ width: '100%', height: '560px', objectFit: 'cover', display: 'block' }} />
+            <img src="/assets/ajpicture.jpg" alt="Akintomide Jumoke, Physiotherapist" style={{ width: '100%', height: 'auto', maxHeight: '560px', objectFit: 'cover', display: 'block' }} />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 4 }}>About</p>
@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       <section style={{ padding: '80px 24px 24px' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', alignItems: 'center' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
           <div style={{ textAlign: 'left' }}>
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Stay in touch</p>
             <h2 style={{ fontSize: '2rem', margin: '0 0 0.75rem', color: '#111827' }}>Receive updates and wellness resources</h2>
