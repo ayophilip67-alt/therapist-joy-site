@@ -43,10 +43,10 @@ export default function Services() {
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Services</p>
             <h1 style={{ fontSize: 'clamp(2.2rem, 3.3vw, 3rem)', margin: '0 0 1rem', lineHeight: 1.15, color: '#111827' }}>Care that supports you where life happens.</h1>
             <p style={{ color: '#4b5563', maxWidth: 700, marginBottom: '1rem' }}>
-              I offer one-to-one physiotherapy support tailored to your goals, symptoms and daily routines. Whether you are dealing with chronic pain, post-surgical recovery, or want support rebuilding confidence in movement, I create a plan that fits your pace.
+              Whether you're living with persistent pain, post-surgical recovery, or simply finding everyday movement more difficult than it used to be, I provide one-on-one mobile physiotherapy in the comfort of your home.
             </p>
             <p style={{ color: '#4b5563', maxWidth: 700 }}>
-              Treatment is always tailored to you and may include pain education, graded movement and exercise therapy, manual therapy, pain reprocessing therapy, dry needling and acupuncture, and self-management strategies.
+              Every treatment is tailored to your goals and combines hands-on care, movement, education, and practical strategies that help you feel more confident between sessions.
             </p>
           </div>
           <div>
