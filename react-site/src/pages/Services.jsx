@@ -1,24 +1,12 @@
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 
 export default function Services() {
   return (
     <main style={{ fontFamily: '"Jost", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', lineHeight: 1.6, color: '#1f2937', background: '#fff' }}>
-      <header style={{ position: 'sticky', top: 0, zIndex: 30, background: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(8px)', borderBottom: '1px solid #ece7dc' }}>
-        <nav style={{ maxWidth: 1200, margin: '0 auto', padding: '20px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
-          <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none', color: '#111827' }}>
-            <img src="/assets/logo.svg" alt="Logo" style={{ height: 42, width: 42 }} />
-            <span style={{ fontSize: '0.95rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase' }}>Healing at Home</span>
-          </Link>
-          <div style={{ display: 'flex', gap: 20, alignItems: 'center', fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.2em', fontWeight: 500, flexWrap: 'wrap' }}>
-            <Link to="/" style={{ color: '#111827', textDecoration: 'none' }}>Home</Link>
-            <a href="/#about" style={{ color: '#111827', textDecoration: 'none' }}>About</a>
-            <a href="/#expect" style={{ color: '#111827', textDecoration: 'none' }}>What to Expect</a>
-            <a href="/#contact" style={{ color: '#111827', textDecoration: 'none' }}>Contact</a>
-          </div>
-        </nav>
-      </header>
+      <Header currentPage="services" />
 
-      <section style={{ padding: '72px 24px 48px', background: '#f9f7f2' }}>
+      <section style={{ padding: '110px 24px 48px', background: '#f9f7f2' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
           <div>
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Services</p>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 
 const navItems = [
   { label: 'Services', href: '#services' },
@@ -85,26 +86,9 @@ export default function Home() {
 
   return (
     <main style={{ fontFamily: '"Jost", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', lineHeight: 1.6, color: '#1f2937', background: '#fff' }}>
-      <header style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(8px)', borderBottom: '1px solid #ece7dc' }}>
-        <nav style={{ maxWidth: 1200, margin: '0 auto', padding: '20px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
-          <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none', color: '#111827' }}>
-            <img src="/assets/logo.svg" alt="Logo" style={{ height: 42, width: 42 }} />
-            <span style={{ fontSize: '0.95rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase' }}>Healing at Home</span>
-          </a>
-          <div style={{ display: 'flex', gap: 20, alignItems: 'center', fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.2em', fontWeight: 500, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
-            {navItems.map((item) => (
-              <a key={item.label} href={item.href} style={{ color: '#111827', textDecoration: 'none' }}>
-                {item.label}
-              </a>
-            ))}
-            <a href="https://forms.gle/nezJvAoj23BmfqnZ8" style={{ border: '1px solid #111827', padding: '10px 16px', color: '#111827', textDecoration: 'none' }}>
-              Book Now
-            </a>
-          </div>
-        </nav>
-      </header>
+      <Header currentPage="home" />
 
-      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '100px 20px 70px', backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(/assets/banner.png)', backgroundSize: 'cover', backgroundPosition: 'center top', color: '#fff' }}>
+      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '110px 20px 70px', backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(/assets/banner.png)', backgroundSize: 'cover', backgroundPosition: 'center top', color: '#fff' }}>
         <div style={{ maxWidth: 960, width: '100%', textAlign: 'center' }}>
           <p style={{ textTransform: 'uppercase', letterSpacing: '0.3em', fontSize: '0.85rem', marginBottom: 16, opacity: 0.9 }}>Chronic Pain</p>
           <h1 style={{ fontSize: 'clamp(2.4rem, 4vw, 4.6rem)', lineHeight: 1.1, margin: '0 0 18px', fontWeight: 400, fontFamily: 'Halimun, Jost, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
