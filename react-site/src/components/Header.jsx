@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const navItems = [
   { label: 'About', href: '#about', isAnchor: true },
@@ -9,21 +9,24 @@ const navItems = [
 
 export default function Header({ currentPage = 'home' }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const navigate = useNavigate();
   const location = useLocation();
 
   const handleLinkClick = () => setDrawerOpen(false);
 
-  const handleNavClick = (item) => {
-    if (item.isAnchor) {
-      // If on services page and clicking an anchor, go home first
-      if (currentPage === 'services') {
-        window.location.href = `/#/${item.href}`;
-      } else {
-        // On home page, just let the anchor navigation work
-        window.location.href = item.href;
-      }
-    }
+  const handleAnchorClick = (sectionId) => {
     handleLinkClick();
+    
+    if (currentPage === 'home') {
+      // On home page, scroll directly to the section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // On other pages, navigate home with state to scroll
+      navigate('/', { state: { scrollTo: sectionId } });
+    }
   };
 
   return (
@@ -40,8 +43,12 @@ export default function Header({ currentPage = 'home' }) {
               item.isAnchor ? (
                 <a
                   key={item.label}
-                  href={item.href}
-                  onClick={() => handleNavClick(item)}
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const sectionId = item.href.slice(1);
+                    handleAnchorClick(sectionId);
+                  }}
                 >
                   {item.label}
                 </a>
@@ -87,8 +94,12 @@ export default function Header({ currentPage = 'home' }) {
                 item.isAnchor ? (
                   <a
                     key={item.label}
-                    href={item.href}
-                    onClick={() => handleNavClick(item)}
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const sectionId = item.href.slice(1);
+                      handleAnchorClick(sectionId);
+                    }}
                   >
                     {item.label}
                   </a>

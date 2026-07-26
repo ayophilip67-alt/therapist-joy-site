@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 
 const navItems = [
@@ -22,6 +22,19 @@ export default function Home() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
   const [captchaToken, setCaptchaToken] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    // Handle scrolling to section if navigated from another page
+    if (location.state?.scrollTo) {
+      const element = document.getElementById(location.state.scrollTo);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location.state?.scrollTo]);
 
   useEffect(() => {
     window.onCaptchaSuccess = (token) => {
