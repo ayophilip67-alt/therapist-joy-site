@@ -10,12 +10,12 @@ const navItems = [
 ];
 
 const servicesList = [
-  'Pain Education',
-  'Graded Movement & Exercise Therapy',
-  'Manual Therapy',
-  'Pain Reprocessing Therapy',
-  'Dry Needling & Acupuncture',
-  'Self-management Strategies',
+  'Chronic & Persistent Pain',
+  'Hip & Knee Pain',
+  'Back & Neck Pain',
+  'Post-surgical Rehabilitation',
+  'Pain related to arthritis',
+  'Shoulder Pain',
 ];
 
 export default function Home() {
@@ -119,7 +119,7 @@ export default function Home() {
               Currently offering in-home physiotherapy services across the Burlington and Hamilton areas. This allows treatment to take place in a familiar, real-world environment where movement and daily activities actually happen.
             </p>
             <p style={{ color: '#4b5563', maxWidth: 560 }}>
-              Treatment is always tailored to you and may include:
+              What conditions can I help with?
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '0.75rem' }}>
               {servicesList.map((service) => (
@@ -181,7 +181,7 @@ export default function Home() {
               </button>
               <small style={{ color: '#6b7280' }}>By submitting, you agree to be contacted by email.</small>
             </div>
-            <div className="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001" data-callback="onCaptchaSuccess" data-expired-callback="onCaptchaExpired" data-error-callback="onCaptchaError"></div>
+            <div className="h-captcha" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2" data-captcha="true" data-callback="onCaptchaSuccess" data-expired-callback="onCaptchaExpired" data-error-callback="onCaptchaError"></div>
             <div style={{ minHeight: '1.25rem', color: '#111827', fontSize: '0.95rem' }}>{status}</div>
           </form>
         </div>
