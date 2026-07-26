@@ -113,6 +113,34 @@ export default function Services() {
                   Please note: Services are privately paid. Direct billing is not available at this time, but you will receive a receipt that you can submit to your insurance provider for reimbursement.
                 </p>
               </div>
+
+              <div style={{ background: '#fff', border: '1px solid #ece7dc', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem', boxShadow: '0 10px 30px rgba(17,24,39,0.04)' }}>
+                <div style={{ width: 48, height: 48, borderRadius: '999px', background: '#f9f7f2', border: '1px solid #ece7dc', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M12 2v20M2 12h20" />
+                    <circle cx="12" cy="12" r="10" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.6rem', color: '#111827' }}>What conditions can I help with?</h3>
+                  <p style={{ color: '#4b5563', margin: 0, lineHeight: 1.7 }}>
+                    I work with individuals experiencing a wide range of musculoskeletal conditions and pain-related challenges. Whether you're managing a chronic condition, recovering from an injury, or experiencing new pain patterns, I can help create a tailored treatment approach.
+                  </p>
+                </div>
+                <ul style={{ margin: 0, paddingLeft: '1rem', color: '#4b5563', display: 'grid', gap: '0.45rem' }}>
+                  <li>Chronic & Persistent Pain</li>
+                  <li>Hip & Knee Pain</li>
+                  <li>Back & Neck Pain</li>
+                  <li>Post-surgical Rehabilitation</li>
+                  <li>Pain related to arthritis</li>
+                  <li>Shoulder Pain</li>
+                  <li>Fibromyalgia</li>
+                  <li>Balance & Mobility difficulties</li>
+                  <li>Strains & Sprains</li>
+                  <li>Sciatica & Nerve related pain</li>
+                  <li>Reduced Strength & Deconditioning</li>
+                </ul>
+              </div>
             </div>
 
             <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #ece7dc' }}>
