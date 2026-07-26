@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Redirect all 404s to the index.html with the path preserved
+        const path = window.location.pathname;
+        const search = window.location.search;
+        const hash = window.location.hash;
+        
+        // Preserve the path by storing it and redirecting to index.html
+        sessionStorage.setItem('redirect_path', path + search + hash);
+        window.location.href = '/index.html';
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
