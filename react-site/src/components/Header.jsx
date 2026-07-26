@@ -1,17 +1,30 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const navItems = [
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '/services' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: '#about', isAnchor: true },
+  { label: 'Services', href: '/services', isAnchor: false },
+  { label: 'Contact', href: '#contact', isAnchor: true },
 ];
 
 export default function Header({ currentPage = 'home' }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const pagePrefix = currentPage === 'home' ? '' : '/';
+  const location = useLocation();
 
   const handleLinkClick = () => setDrawerOpen(false);
+
+  const handleNavClick = (item) => {
+    if (item.isAnchor) {
+      // If on services page and clicking an anchor, go home first
+      if (currentPage === 'services') {
+        window.location.href = `/#/${item.href}`;
+      } else {
+        // On home page, just let the anchor navigation work
+        window.location.href = item.href;
+      }
+    }
+    handleLinkClick();
+  };
 
   return (
     <>
@@ -24,9 +37,23 @@ export default function Header({ currentPage = 'home' }) {
 
           <div className="desktop-nav">
             {navItems.map((item) => (
-              <a key={item.label} href={`${pagePrefix}${item.href}`}>
-                {item.label}
-              </a>
+              item.isAnchor ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => handleNavClick(item)}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  onClick={handleLinkClick}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
             <a className="header-cta" href="https://forms.gle/nezJvAoj23BmfqnZ8">
               Book Now
@@ -57,9 +84,23 @@ export default function Header({ currentPage = 'home' }) {
                 Home
               </Link>
               {navItems.map((item) => (
-                <a key={item.label} href={`${pagePrefix}${item.href}`} onClick={handleLinkClick}>
-                  {item.label}
-                </a>
+                item.isAnchor ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => handleNavClick(item)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    onClick={handleLinkClick}
+                  >
+                    {item.label}
+                  </Link>
+                )
               ))}
             </nav>
             <a className="drawer-book" href="https://forms.gle/nezJvAoj23BmfqnZ8" onClick={handleLinkClick}>
