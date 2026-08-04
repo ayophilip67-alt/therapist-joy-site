@@ -82,7 +82,7 @@ export default function Services() {
                 </ul>
               </div>
 
-              <div style={{ background: '#fff', border: '1px solid #ece7dc', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem', boxShadow: '0 10px 30px rgba(17,24,39,0.04)' }}>
+              <div style={{ background: '#fff', border: '1px solid #ece7dc', padding: '1.5rem', display: 'none', flexDirection: 'column', gap: '1rem', boxShadow: '0 10px 30px rgba(17,24,39,0.04)' }}>
                 <div style={{ width: 48, height: 48, borderRadius: '999px', background: '#f9f7f2', border: '1px solid #ece7dc', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M4 7h16" />
