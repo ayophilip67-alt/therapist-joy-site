@@ -1,5 +1,139 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
+
+const faqItems = [
+  {
+    question: "Do I need a doctor's referral to book physiotherapy?",
+    answer: "No. You can contact Healing at Home directly to book an assessment. However, some extended health insurance plans may require a physician's referral before they will reimburse physiotherapy expenses, so it's worth checking your individual plan.",
+  },
+  {
+    question: 'What areas do you provide in-home physiotherapy in?',
+    answer: 'Healing at Home provides mobile physiotherapy across Burlington and the Greater Hamilton area, including communities such as Ancaster, Dundas, Stoney Creek, Waterdown, and Binbrook. If you\'re unsure whether your home falls within the service area, feel free to get in touch.',
+  },
+  {
+    question: 'How does booking an in-home appointment work?',
+    answer: 'Because I travel between different communities to provide care, appointments are requested rather than booked instantly online. When you submit an appointment request, you can share the days and times that work best for you. I\'ll then coordinate my home visits in your area and get back to you with an appointment time that works for both of us.',
+  },
+  {
+    question: 'How do I know whether I need a 60- or 90-minute initial assessment?',
+    answer: 'The 60-minute assessment is generally a good fit for a more straightforward concern, such as a recent injury, a single area of pain, or post-surgical rehabilitation with clearly defined goals. The 90-minute assessment provides more time to explore complex or persistent pain, multiple concerns, or the broader factors affecting your recovery. It is also recommended for older adults who would benefit from a more comprehensive strength, mobility, balance, and fall-risk assessment.',
+  },
+  {
+    question: 'Will my insurance cover in-home physiotherapy?',
+    answer: 'Physiotherapy provided by a Registered Physiotherapist is often eligible for reimbursement through extended health benefits. Coverage varies between insurance plans, including how much is covered and whether a physician\'s referral is required. Healing at Home does not currently offer direct billing, but you will receive a receipt that you can submit to your insurance provider for reimbursement.',
+  },
+  {
+    question: "What if I've already tried physiotherapy and I'm still in pain?",
+    answer: 'That\'s okay. In fact, Healing at Home\'s approach may be particularly helpful if you\'ve been dealing with pain for a long time or feel like you\'ve tried different treatments without fully understanding why your symptoms persist. Rather than focusing only on the painful area, we can explore the bigger picture - including movement, strength, sleep, stress, daily routines, beliefs about pain, and other factors that may be influencing your experience. From there, we work together to identify strategies that make sense for you and help you become more confident managing your health independently.',
+  },
+  {
+    question: 'What should I wear or prepare for my first appointment?',
+    answer: 'Wear something comfortable that allows you to move freely and, where possible, allows access to the area we\'ll be assessing. It can also be helpful to have any relevant medical or surgical information available. You don\'t need any special equipment or a large exercise space - I\'ll bring what is needed for the session and work with the space you have. In fact, being in your own environment can help us find practical ways to make movement and exercise fit more naturally into your everyday life.',
+  },
+];
+
+function FAQ() {
+  const [faqOpen, setFaqOpen] = useState(false);
+  const [openQuestions, setOpenQuestions] = useState({});
+
+  const toggleQuestion = (index) => {
+    setOpenQuestions((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
+  return (
+    <div style={{ marginTop: '3rem', paddingTop: '3rem', borderTop: '1px solid #ece7dc' }}>
+      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Support</p>
+        <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#111827', marginBottom: '1rem' }}>Frequently Asked Questions</h2>
+      </div>
+
+      <button
+        type="button"
+        onClick={() => setFaqOpen(!faqOpen)}
+        style={{
+          display: 'block',
+          margin: '0 auto 2rem',
+          padding: '12px 24px',
+          background: '#111827',
+          color: '#fff',
+          border: 'none',
+          borderRadius: 6,
+          cursor: 'pointer',
+          textTransform: 'uppercase',
+          letterSpacing: '0.2em',
+          fontSize: '0.8rem',
+          fontWeight: 500,
+        }}
+      >
+        {faqOpen ? 'Hide Questions' : 'Show Questions'}
+      </button>
+
+      {faqOpen && (
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <div style={{ display: 'grid', gap: '1rem' }}>
+            {faqItems.map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  border: '1px solid #ece7dc',
+                  borderRadius: 8,
+                  overflow: 'hidden',
+                  background: '#fff',
+                }}
+              >
+                <button
+                  type="button"
+                  onClick={() => toggleQuestion(index)}
+                  style={{
+                    width: '100%',
+                    padding: '1.2rem 1.5rem',
+                    background: '#f9f7f2',
+                    border: 'none',
+                    cursor: 'pointer',
+                    textAlign: 'left',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    fontSize: '1rem',
+                    fontWeight: 500,
+                    color: '#111827',
+                    transition: 'background-color 0.2s ease',
+                    fontFamily: '"Jost", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  }}
+                  onMouseEnter={(e) => (e.target.style.background = '#ede9df')}
+                  onMouseLeave={(e) => (e.target.style.background = '#f9f7f2')}
+                >
+                  <span>{item.question}</span>
+                  <span
+                    style={{
+                      marginLeft: '1rem',
+                      flexShrink: 0,
+                      fontSize: '1.2rem',
+                      transform: openQuestions[index] ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.2s ease',
+                    }}
+                  >
+                    ▼
+                  </span>
+                </button>
+
+                {openQuestions[index] && (
+                  <div style={{ padding: '1.5rem', borderTop: '1px solid #ece7dc', color: '#4b5563', lineHeight: 1.7 }}>
+                    {item.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Services() {
   return (
@@ -271,6 +405,10 @@ export default function Services() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <FAQ />
         </div>
       </section>
 
