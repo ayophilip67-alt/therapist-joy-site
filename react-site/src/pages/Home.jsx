@@ -110,9 +110,9 @@ export default function Home() {
           <p style={{ fontSize: '1rem', letterSpacing: '0.3em', textTransform: 'uppercase', marginBottom: 24, opacity: 0.9 }}>
             Mobile Physiotherapy Services in Burlington & Hamilton
           </p>
-          <Link to="/services" style={{ display: 'inline-block', padding: '14px 24px', border: '1px solid #fff', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
-            Learn More
-          </Link>
+          <a href="https://forms.gle/nezJvAoj23BmfqnZ8" style={{ display: 'inline-block', padding: '14px 24px', border: '1px solid #fff', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
+            Book Now
+          </a>
         </div>
       </section>
 
