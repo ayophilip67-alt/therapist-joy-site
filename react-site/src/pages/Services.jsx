@@ -143,6 +143,95 @@ export default function Services() {
               </div>
             </div>
 
+            <div style={{ marginTop: '3rem', paddingTop: '3rem', borderTop: '1px solid #ece7dc' }}>
+              <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Investment</p>
+                <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#111827', marginBottom: '1rem' }}>Pricing</h2>
+              </div>
+              
+              <p style={{ color: '#4b5563', maxWidth: 700, lineHeight: 1.7, marginBottom: '1.5rem' }}>
+                Your entire life contributes to how your body feels. That's why every visit starts with understanding you as a whole person — not just the joint, the muscle, or the diagnosis — before we build a plan together.
+              </p>
+              
+              <p style={{ color: '#4b5563', maxWidth: 700, lineHeight: 1.7, marginBottom: '2.5rem' }}>
+                Below is an outline of session options. If you're not sure what fits, reach out and we'll figure it out together.
+              </p>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+                <div style={{ background: '#f9f7f2', border: '1px solid #ece7dc', padding: '2rem', borderRadius: 12 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
+                    <div style={{ width: 48, height: 48, borderRadius: '999px', background: '#fff', border: '1px solid #ece7dc', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M9 11l3 3L22 4" />
+                        <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <h3 style={{ fontSize: '1.3rem', margin: 0, color: '#111827' }}>Initial Assessments</h3>
+                  </div>
+
+                  <div style={{ display: 'grid', gap: '1.5rem' }}>
+                    <div style={{ borderBottom: '1px solid #e5e7eb', paddingBottom: '1rem' }}>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.1rem' }}>90-Minute Assessment — $220</p>
+                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '0.75rem' }}>
+                        This is the right starting point if:
+                      </p>
+                      <ul style={{ margin: 0, paddingLeft: '1.2rem', color: '#6b7280', display: 'grid', gap: '0.3rem', fontSize: '0.9rem' }}>
+                        <li>You've been living with persistent or long-standing pain, especially if it's shifted, spread, or been hard to pin down over time</li>
+                        <li>You've tried other treatment before and it hasn't fully helped</li>
+                        <li>You're an older adult looking to build strength and independence at home, including a full-body assessment and balance/fall-risk evaluation</li>
+                        <li>Life stress, sleep, or mood feel connected to how your body is doing</li>
+                      </ul>
+                      <p style={{ margin: '0.75rem 0 0', color: '#6b7280', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                        We'll spend this time properly — going through your history in detail, assessing movement and function, and building a plan that actually fits your life.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.1rem' }}>60-Minute Assessment — $180</p>
+                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '0.75rem' }}>
+                        This is the right starting point if:
+                      </p>
+                      <ul style={{ margin: 0, paddingLeft: '1.2rem', color: '#6b7280', display: 'grid', gap: '0.3rem', fontSize: '0.9rem' }}>
+                        <li>You have a clear, single-region issue (a strain, a sprain, a recent flare-up)</li>
+                        <li>You're coming in post-surgery with a defined surgical plan already in place</li>
+                        <li>Your goals are fairly specific and contained</li>
+                      </ul>
+                      <p style={{ margin: '0.75rem 0 0', color: '#6b7280', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                        If it turns out you need more time to do this properly, we'll talk about it together — no pressure, no surprises.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div style={{ background: '#f9f7f2', border: '1px solid #ece7dc', padding: '2rem', borderRadius: 12 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
+                    <div style={{ width: 48, height: 48, borderRadius: '999px', background: '#fff', border: '1px solid #ece7dc', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2" />
+                      </svg>
+                    </div>
+                    <h3 style={{ fontSize: '1.3rem', margin: 0, color: '#111827' }}>Follow-Up Sessions</h3>
+                  </div>
+
+                  <p style={{ margin: '0 0 1.5rem', color: '#6b7280', lineHeight: 1.7, fontSize: '0.95rem' }}>
+                    Follow-up sessions build on your assessment and typically include hands-on treatment, movement and exercise coaching, pain education, acupuncture if needed, and practical strategies for the parts of daily life you're working to get back.
+                  </p>
+
+                  <div style={{ display: 'grid', gap: '1.5rem' }}>
+                    <div style={{ borderBottom: '1px solid #e5e7eb', paddingBottom: '1rem' }}>
+                      <p style={{ margin: '0 0 0.3rem', fontWeight: 600, color: '#111827', fontSize: '1.1rem' }}>60-Minute Follow-Up — $170</p>
+                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.9rem' }}>Full session building on your assessment</p>
+                    </div>
+
+                    <div>
+                      <p style={{ margin: '0 0 0.3rem', fontWeight: 600, color: '#111827', fontSize: '1.1rem' }}>45-Minute Follow-Up — $140</p>
+                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.9rem' }}>Focused session once progress is underway</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #ece7dc' }}>
               <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
                 <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 8 }}>What to Expect</p>
