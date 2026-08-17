@@ -282,14 +282,6 @@ export default function Services() {
                 <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Investment</p>
                 <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#111827', marginBottom: '1rem' }}>Pricing</h2>
               </div>
-              
-              <p style={{ color: '#4b5563', maxWidth: 700, lineHeight: 1.7, marginBottom: '1.5rem' }}>
-                Your entire life contributes to how your body feels. That's why every visit starts with understanding you as a whole person — not just the joint, the muscle, or the diagnosis — before we build a plan together.
-              </p>
-              
-              <p style={{ color: '#4b5563', maxWidth: 700, lineHeight: 1.7, marginBottom: '2.5rem' }}>
-                Below is an outline of session options. If you're not sure what fits, reach out and we'll figure it out together.
-              </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
                 <div style={{ background: '#f9f7f2', border: '1px solid #ece7dc', padding: '2rem', borderRadius: 12 }}>
