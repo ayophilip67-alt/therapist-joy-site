@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const navItems = [
-  { label: 'About', href: '#about', isAnchor: true },
+  { label: 'About', href: '/about', isAnchor: false },
   { label: 'Services', href: '/services', isAnchor: false },
   { label: 'Contact', href: '#contact', isAnchor: true },
 ];

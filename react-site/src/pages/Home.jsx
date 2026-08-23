@@ -166,9 +166,9 @@ export default function Home() {
             <p style={{ color: '#4b5563' }}>
               This is why I take the time to understand your unique pain experience and create a personalised approach that feels safe, manageable, and meaningful to you. I take a whole-person approach, integrating ACT-informed strategies and trauma-informed care to support you in moving forward with confidence.
             </p>
-            <a href="#contact" style={{ display: 'inline-block', border: '1px solid #111827', padding: '12px 20px', color: '#111827', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', width: 'fit-content', marginTop: '0.5rem' }}>
+            <Link to="/about" style={{ display: 'inline-block', border: '1px solid #111827', padding: '12px 20px', color: '#111827', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', width: 'fit-content', marginTop: '0.5rem' }}>
               More on me
-            </a>
+            </Link>
           </div>
         </div>
       </section>
