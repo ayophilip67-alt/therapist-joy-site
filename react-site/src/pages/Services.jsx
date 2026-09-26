@@ -13,7 +13,7 @@ const faqItems = [
   },
   {
     question: 'How does booking an in-home appointment work?',
-    answer: 'Because I travel between different communities to provide care, appointments are requested rather than booked instantly online. When you submit an appointment request, you can share the days and times that work best for you. I\'ll then coordinate my home visits in your area and get back to you with an appointment time that works for both of us.',
+    answer: 'Appointments can now be booked directly online. Simply click Book Now, choose the service you’re looking for, and select an available appointment time that works for you.\n\nIf you live outside these areas and aren’t sure whether I can travel to you, book a free 15-minute discovery call instead. We can chat about where you’re located, what you’re looking for, and whether in-home care can be provided in your area.',
   },
   {
     question: 'How do I know whether I need a 60- or 90-minute initial assessment?',
