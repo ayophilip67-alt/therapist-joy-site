@@ -149,12 +149,15 @@ export default function Home() {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#601212', marginBottom: 4 }}>About</p>
-            <h2 style={{ fontSize: '2.2rem', margin: 0, lineHeight: 1.15, color: '#1a1a1a' }}>Akintomide Jumoke, Registered Physiotherapist</h2>
+            <h2 style={{ fontSize: '2.2rem', margin: 0, lineHeight: 1.15, color: '#1a1a1a' }}>The Heart Behind Healing at Home</h2>
             <p style={{ color: '#1a1a1a' }}>
-              I’m AJ, a licensed physiotherapist focusing on chronic and complex pain management. My approach is based on understanding that pain is shaped by a mix of physical, psychological, and social factors, not just the body alone.
+              Healing at Home was created around a simple idea: good care starts with understanding the whole person, not just where it hurts.
             </p>
             <p style={{ color: '#1a1a1a' }}>
-              This is why I take the time to understand your unique pain experience and create a personalised approach that feels safe, manageable, and meaningful to you. I take a whole-person approach, integrating ACT-informed strategies and trauma-informed care to support you in moving forward with confidence.
+              I’m AJ, a Registered Physiotherapist and the owner behind Healing at Home. I approach physiotherapy through a biopsychosocial and trauma-informed lens, recognizing that pain and recovery can be influenced by many parts of life. From movement and physical health to stress, sleep, past experiences, environment, and the things that matter to you.
+            </p>
+            <p style={{ color: '#1a1a1a' }}>
+              That’s why I take the time to understand your experience, what’s important to you, and what you want to get back to doing. Care is tailored to you and moves at a pace that feels manageable, with the goal of helping you better understand your body, feel more confident in movement, and get back to more of what is meaningful to you.
             </p>
             <Link to="/about" style={{ display: 'inline-block', border: '1px solid #601212', background: '#601212', padding: '12px 20px', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', width: 'fit-content', marginTop: '0.5rem', boxShadow: '0 10px 20px rgba(96,18,18,0.12)' }}>
               More on me
