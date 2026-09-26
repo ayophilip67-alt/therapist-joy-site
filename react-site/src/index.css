@@ -50,18 +50,21 @@ img {
 .site-header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  width: min(76vw, 760px);
+  max-width: calc(100% - 24px);
+  transform: translateX(-50%);
   z-index: 50;
   background: rgba(255, 246, 251, 0.96);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(96, 18, 18, 0.18);
+  box-shadow: 0 8px 20px rgba(96, 18, 18, 0.08);
 }
 
 .header-inner {
-  max-width: 880px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 10px 12px;
+  padding: 8px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
