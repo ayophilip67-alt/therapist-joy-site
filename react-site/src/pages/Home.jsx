@@ -149,9 +149,9 @@ export default function Home() {
         <img className="home-hero-image-mobile" src="/assets/mobilehero2.jpeg" alt="Healing at Home mobile hero" />
       </section>
 
-      <div style={{ background: '#1a1a1a', color: '#fff6fb', padding: '0.85rem 1rem', overflow: 'hidden', whiteSpace: 'nowrap' }}>
-        <div style={{ display: 'inline-block', paddingLeft: '100%', animation: 'marquee 18s linear infinite' }}>
-          YOUR CHRONIC PAIN PHYSIOTHERAPIST • EVIDENCE-BASED CARE • TRAUMA-INFORMED CARE • MOVE BETTER, LIVE BETTER • YOUR CHRONIC PAIN PHYSIOTHERAPIST • EVIDENCE-BASED CARE • TRAUMA-INFORMED CARE • MOVE BETTER, LIVE BETTER
+      <div style={{ background: '#601212', color: '#fff', padding: '0.85rem 1rem', overflow: 'hidden', whiteSpace: 'nowrap' }}>
+        <div style={{ display: 'inline-block', paddingLeft: '100%', animation: 'marquee 18s linear infinite', color: '#fff' }}>
+          PHYSIOTHERAPY WHERE LIFE HAPPENS • WHOLE-PERSON CARE • PERSISTENT PAIN • YOUR GOALS, YOUR PACE • MOVE TOWARD WHAT MATTERS • PHYSIOTHERAPY WHERE LIFE HAPPENS • WHOLE-PERSON CARE • PERSISTENT PAIN • YOUR GOALS, YOUR PACE • MOVE TOWARD WHAT MATTERS
         </div>
       </div>
 
@@ -242,23 +242,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" style={{ padding: '96px 24px 120px', background: '#1a1a1a', color: '#fff6fb' }}>
+      <section id="contact" style={{ padding: '96px 24px 120px', background: '#601212', color: '#fff' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ textTransform: 'uppercase', letterSpacing: '0.3em', fontSize: '0.8rem', color: 'rgba(249,250,251,0.6)', marginBottom: 16 }}>Ready to get started? Reach out today!</p>
-          <h2 style={{ fontSize: '2.3rem', margin: '0 0 1rem', lineHeight: 1.15 }}>Experienced Therapist. Comfortable Space.</h2>
-          <p style={{ color: 'rgba(249,250,251,0.75)', marginBottom: '1rem', lineHeight: 1.8 }}>
+          <p style={{ textTransform: 'uppercase', letterSpacing: '0.3em', fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)', marginBottom: 16 }}>Ready to get started? Reach out today!</p>
+          <h2 style={{ fontSize: '2.3rem', margin: '0 0 1rem', lineHeight: 1.15, color: '#fff' }}>Experienced Therapist. Comfortable Space.</h2>
+          <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '1rem', lineHeight: 1.8 }}>
             Have a question about physiotherapy, in-home care, or whether Healing at Home is the right fit for you? Feel free to get in touch.
           </p>
-          <p style={{ color: 'rgba(249,250,251,0.9)', marginBottom: '0.5rem', lineHeight: 1.8, fontWeight: 500 }}>
+          <p style={{ color: '#fff', marginBottom: '0.5rem', lineHeight: 1.8, fontWeight: 500 }}>
             Phone: +1 (289) 902-4044
           </p>
-          <p style={{ color: 'rgba(249,250,251,0.9)', marginBottom: '1.5rem', lineHeight: 1.8, fontWeight: 500 }}>
+          <p style={{ color: '#fff', marginBottom: '1.5rem', lineHeight: 1.8, fontWeight: 500 }}>
             Email: info@ajpt.ca
           </p>
-          <p style={{ color: 'rgba(249,250,251,0.75)', marginBottom: '2rem', lineHeight: 1.8 }}>
+          <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '2rem', lineHeight: 1.8 }}>
             Ready to get started? Click Book Now to view available appointments and choose the service that best fits your needs.
           </p>
-          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #cda275', background: '#601212', padding: '14px 24px', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 24px rgba(96,18,18,0.26)' }}>
+          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #cda275', background: '#fff', padding: '14px 24px', color: '#601212', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 24px rgba(0,0,0,0.12)' }}>
             Book a Session
           </a>
         </div>
