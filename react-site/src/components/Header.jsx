@@ -34,7 +34,7 @@ export default function Header({ currentPage = 'home' }) {
       <header className="site-header">
         <div className="header-inner">
           <Link to="/" className="header-brand" onClick={handleLinkClick}>
-            <img src="/assets/logo.svg" alt="Logo" />
+            <img src="/assets/newlogo.jpeg" alt="Logo" />
             <span>Healing at Home</span>
           </Link>
 
