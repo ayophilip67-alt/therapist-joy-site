@@ -102,76 +102,50 @@ export default function Home() {
       <style>{`
         .home-hero {
           position: relative;
+          width: 100%;
+          min-height: 84vh;
           overflow: hidden;
           background: #f5efe6;
         }
 
-        .home-hero-image {
+        .home-hero-image,
+        .home-hero-image-mobile {
           position: absolute;
           inset: 0;
           width: 100%;
           height: 100%;
           object-fit: cover;
-          object-position: center 50%;
           display: block;
+        }
+
+        .home-hero-image {
+          object-position: center center;
         }
 
         .home-hero-image-mobile {
           display: none;
         }
 
-        .home-hero-overlay {
-          position: relative;
-          z-index: 1;
-          display: flex;
-          align-items: center;
-          min-height: 100vh;
-          padding: 110px 20px 70px;
-          background: linear-gradient(90deg, rgba(245, 239, 230, 0.7) 0%, rgba(245, 239, 230, 0.2) 35%, rgba(245, 239, 230, 0.1) 100%);
-        }
-
-        @media (max-width: 900px) {
-          .home-hero-overlay {
-            min-height: 72vh;
-            padding-top: 96px;
-            padding-bottom: 38px;
-          }
-
-          .home-hero-image {
-            object-position: center 42%;
-          }
-        }
-
         @media (max-width: 560px) {
+          .home-hero {
+            min-height: 60vh;
+          }
+
           .home-hero-image {
             display: none;
           }
 
           .home-hero-image-mobile {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center 50%;
             display: block;
-          }
-
-          .home-hero-overlay {
-            min-height: 62vh;
-            padding-top: 58px;
-            padding-bottom: 24px;
-            align-items: flex-start;
-            background: none;
-            display: none;
+            object-position: center center;
           }
         }
       `}</style>
 
       <Header currentPage="home" />
 
-      <section className="home-hero" aria-label="Healing at Home introduction">
-        <img className="home-hero-image" src="/assets/homeimage.PNG" alt="Healing at Home physiotherapy room" />
+      <section className="home-hero" aria-label="Healing at Home hero image">
+        <img className="home-hero-image" src="/assets/homeimage.PNG" alt="Healing at Home hero" />
         <img className="home-hero-image-mobile" src="/assets/mobilehero.jpeg" alt="Healing at Home mobile hero" />
       </section>
 
