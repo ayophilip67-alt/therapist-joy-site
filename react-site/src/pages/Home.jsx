@@ -216,9 +216,12 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
           <div style={{ textAlign: 'left' }}>
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Stay in touch</p>
-            <h2 style={{ fontSize: '2rem', margin: '0 0 0.75rem', color: '#111827' }}>Receive updates and wellness resources</h2>
+            <h2 style={{ fontSize: '2rem', margin: '0 0 0.75rem', color: '#111827' }}>A little support, straight to your inbox</h2>
             <p style={{ color: '#4b5563', marginBottom: '1.2rem', lineHeight: 1.7 }}>
-              If you’d like to hear about upcoming resources, helpful tools, and meaningful updates, leave your details below and I’ll keep you in the loop.
+              Thoughtful resources, practical tips, and reflections to help you better understand your body, move with more confidence, and care for yourself in everyday life.
+            </p>
+            <p style={{ color: '#4b5563', marginBottom: '1.2rem', lineHeight: 1.7 }}>
+              Join the newsletter
             </p>
           </div>
 
