@@ -93,7 +93,7 @@ export default function About() {
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
           <div>
             <p style={{ fontSize: '1.05rem', margin: 0, color: '#1a1a1a' }}>Healing at Home</p>
-            <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#601212' }}>Chronic Pain Physical Therapist</p>
+            <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#601212' }}>Mobile Physiotherapy in Hamilton</p>
             <p style={{ fontSize: '0.75rem', color: '#601212', marginTop: '0.25rem' }}>© {new Date().getFullYear()} Healing at Home</p>
           </div>
           <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>

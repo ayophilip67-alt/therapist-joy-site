@@ -71,22 +71,22 @@ img {
 .header-brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  color: var(--burgundy);
+  justify-content: flex-start;
+  width: min(210px, 32vw);
+  min-width: 0;
   text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
 }
 
 .header-brand img {
-  height: 42px;
-  width: 42px;
-  object-fit: cover;
-  border-radius: 12px;
-  background: rgba(96, 18, 18, 0.08);
-  padding: 4px;
-  box-shadow: inset 0 0 0 1px rgba(96, 18, 18, 0.08);
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
 }
 
 .desktop-nav {
