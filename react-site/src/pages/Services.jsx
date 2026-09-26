@@ -9,7 +9,7 @@ const faqItems = [
   },
   {
     question: 'What areas do you provide in-home physiotherapy in?',
-    answer: 'Healing at Home provides mobile physiotherapy across Burlington and the Greater Hamilton area, including communities such as Ancaster, Dundas, Stoney Creek, Waterdown, and Binbrook. If you\'re unsure whether your home falls within the service area, feel free to get in touch.',
+    answer: 'Healing at Home currently provides in-home physiotherapy across Ancaster, Dundas, and Hamilton. If you live outside these service areas, you\'re still welcome to reach out. Depending on your location and availability, Healing at Home may be able to provide in-home care in your area.',
   },
   {
     question: 'How does booking an in-home appointment work?',
@@ -411,7 +411,7 @@ export default function Services() {
             <p style={{ color: '#4b5563', marginBottom: '1.2rem', lineHeight: 1.7 }}>
               Reach out at +1 (289)-902-4044 or info@ajpt.ca and I’ll be happy to help. If you want, I can also share updates and wellness resources with you.
             </p>
-            <a href="https://forms.gle/nezJvAoj23BmfqnZ8" style={{ display: 'inline-block', border: '1px solid #111827', padding: '12px 22px', color: '#111827', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
+            <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #111827', padding: '12px 22px', color: '#111827', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
               Book a Session
             </a>
           </div>

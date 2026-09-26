@@ -62,7 +62,7 @@ export default function Header({ currentPage = 'home' }) {
                 </Link>
               )
             ))}
-            <a className="header-cta" href="https://forms.gle/nezJvAoj23BmfqnZ8">
+            <a className="header-cta" href="https://healingathome.embodiaapp.com/patient_portal">
               Book Now
             </a>
           </div>
@@ -114,7 +114,7 @@ export default function Header({ currentPage = 'home' }) {
                 )
               ))}
             </nav>
-            <a className="drawer-book" href="https://forms.gle/nezJvAoj23BmfqnZ8" onClick={handleLinkClick}>
+            <a className="drawer-book" href="https://healingathome.embodiaapp.com/patient_portal" onClick={handleLinkClick}>
               Book Now
             </a>
           </div>

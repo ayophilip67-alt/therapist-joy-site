@@ -83,7 +83,7 @@ export default function About() {
           <p style={{ color: 'rgba(249,250,251,0.75)', marginBottom: '2rem', lineHeight: 1.8 }}>
             Ready to take the next step toward feeling better? Get in touch to book a session or ask any questions.
           </p>
-          <a href="https://forms.gle/nezJvAoj23BmfqnZ8" style={{ display: 'inline-block', border: '1px solid #f9fafb', padding: '14px 24px', color: '#f9fafb', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
+          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #f9fafb', padding: '14px 24px', color: '#f9fafb', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
             Book a Session
           </a>
         </div>

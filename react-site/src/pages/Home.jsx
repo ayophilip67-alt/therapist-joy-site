@@ -110,7 +110,7 @@ export default function Home() {
           <p style={{ fontSize: '1rem', letterSpacing: '0.3em', textTransform: 'uppercase', marginBottom: 24, opacity: 0.9 }}>
             Mobile Physiotherapy Services in Burlington & Hamilton
           </p>
-          <a href="https://forms.gle/nezJvAoj23BmfqnZ8" style={{ display: 'inline-block', padding: '14px 24px', border: '1px solid #fff', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
+          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', padding: '14px 24px', border: '1px solid #fff', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
             Book Now
           </a>
         </div>
@@ -129,10 +129,13 @@ export default function Home() {
             <h2 style={{ fontSize: '2.2rem', margin: 0, lineHeight: 1.15, color: '#111827' }}>Care That Comes To You</h2>
             <h3 style={{ fontSize: '1.15rem', margin: 0, fontStyle: 'italic', color: '#6b7280' }}>Your Session. Your Goals. Your Pace.</h3>
             <p style={{ color: '#4b5563', maxWidth: 560 }}>
-              Currently offering in-home physiotherapy services across the Burlington and Hamilton areas. This allows treatment to take place in a familiar, real-world environment where movement and daily activities actually happen.
+              Currently offering in-home physiotherapy services across Ancaster, Dundas, and Hamilton. This allows treatment to take place in a familiar, real-world environment where movement and daily activities actually happen.
             </p>
             <p style={{ color: '#4b5563', maxWidth: 560 }}>
-              What conditions can I help with?
+              If you live outside these service areas, you’re still welcome to reach out. Depending on your location and availability, Healing at Home may be able to provide in-home care in your area.
+            </p>
+            <p style={{ color: '#4b5563', maxWidth: 560 }}>
+              What conditions do we treat?
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '0.75rem' }}>
               {servicesList.map((service) => (
@@ -207,7 +210,7 @@ export default function Home() {
           <p style={{ color: 'rgba(249,250,251,0.75)', marginBottom: '2rem', lineHeight: 1.8 }}>
             Living with persistent pain can be frustrating, especially when you’ve tried different things and are still feeling stuck. If you’re looking for a space where your experience is heard and we move at a pace that feels right for you, you’re welcome to get in touch at +1 (289)-902-4044 or info@ajpt.ca. My availability: Monday | Thursday | Saturday.
           </p>
-          <a href="https://forms.gle/nezJvAoj23BmfqnZ8" style={{ display: 'inline-block', border: '1px solid #f9fafb', padding: '14px 24px', color: '#f9fafb', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
+          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #f9fafb', padding: '14px 24px', color: '#f9fafb', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
             Book a Session
           </a>
         </div>
