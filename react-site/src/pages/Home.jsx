@@ -101,20 +101,7 @@ export default function Home() {
     <main style={{ fontFamily: '"Jost", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', lineHeight: 1.6, color: '#1b1b1b', background: '#fff6fb' }}>
       <Header currentPage="home" />
 
-      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '110px 20px 70px', backgroundImage: 'linear-gradient(rgba(26,26,26,0.42), rgba(26,26,26,0.52)), url(/assets/banner.png)', backgroundSize: 'cover', backgroundPosition: 'center top', color: '#fff' }}>
-        <div style={{ maxWidth: 960, width: '100%', textAlign: 'center' }}>
-          <p style={{ textTransform: 'uppercase', letterSpacing: '0.3em', fontSize: '0.85rem', marginBottom: 16, opacity: 0.9 }}>Chronic Pain</p>
-          <h1 style={{ fontSize: 'clamp(2.4rem, 4vw, 4.6rem)', lineHeight: 1.1, margin: '0 0 18px', fontWeight: 400, fontFamily: 'Halimun, Jost, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
-            Healing at Home
-          </h1>
-          <p style={{ fontSize: '1rem', letterSpacing: '0.3em', textTransform: 'uppercase', marginBottom: 24, opacity: 0.9 }}>
-            Mobile Physiotherapy Services in Burlington & Hamilton
-          </p>
-          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', padding: '14px 24px', border: '1px solid #cda275', background: '#601212', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 26px rgba(96,18,18,0.24)' }}>
-            Book Now
-          </a>
-        </div>
-      </section>
+      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '110px 20px 70px', backgroundImage: 'url(/assets/homeimage.PNG)', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', color: '#fff' }} />
 
       <div style={{ background: '#1a1a1a', color: '#fff6fb', padding: '0.85rem 1rem', overflow: 'hidden', whiteSpace: 'nowrap' }}>
         <div style={{ display: 'inline-block', paddingLeft: '100%', animation: 'marquee 18s linear infinite' }}>
