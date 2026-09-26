@@ -107,14 +107,18 @@ export default function Home() {
         @media (max-width: 768px) {
           .home-hero {
             min-height: 72vh !important;
-            background-position: center 24%;
+            background-size: contain !important;
+            background-position: center center !important;
+            background-color: #f4efe8;
           }
         }
 
         @media (max-width: 480px) {
           .home-hero {
-            min-height: 58vh !important;
-            background-position: center 22%;
+            min-height: 54vh !important;
+            background-size: contain !important;
+            background-position: center center !important;
+            background-color: #f4efe8;
           }
         }
       `}</style>
