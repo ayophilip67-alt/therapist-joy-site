@@ -137,18 +137,18 @@ function FAQ() {
 
 export default function Services() {
   return (
-    <main style={{ fontFamily: '"Jost", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', lineHeight: 1.6, color: '#1f2937', background: '#fff' }}>
+    <main style={{ fontFamily: '"Jost", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', lineHeight: 1.6, color: '#1b1b1b', background: '#fff6fb' }}>
       <Header currentPage="services" />
 
-      <section style={{ padding: '110px 24px 48px', background: '#f9f7f2' }}>
+      <section style={{ padding: '110px 24px 48px', background: '#fff6fb' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
           <div>
-            <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Services</p>
-            <h1 style={{ fontSize: 'clamp(2.2rem, 3.3vw, 3rem)', margin: '0 0 1rem', lineHeight: 1.15, color: '#111827' }}>Care that supports you where life happens.</h1>
-            <p style={{ color: '#4b5563', maxWidth: 700, marginBottom: '1rem' }}>
+            <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#601212', marginBottom: 12 }}>Services</p>
+            <h1 style={{ fontSize: 'clamp(2.2rem, 3.3vw, 3rem)', margin: '0 0 1rem', lineHeight: 1.15, color: '#1a1a1a' }}>Care that supports you where life happens.</h1>
+            <p style={{ color: '#1a1a1a', maxWidth: 700, marginBottom: '1rem' }}>
               Whether you're living with persistent pain, post-surgical recovery, or simply finding everyday movement more difficult than it used to be, I provide one-on-one mobile physiotherapy in the comfort of your home.
             </p>
-            <p style={{ color: '#4b5563', maxWidth: 700 }}>
+            <p style={{ color: '#1a1a1a', maxWidth: 700 }}>
               Every treatment is tailored to your goals and combines hands-on care, movement, education, and practical strategies that help you feel more confident between sessions.
             </p>
           </div>
@@ -159,11 +159,11 @@ export default function Services() {
       </section>
 
       <section id="expect" style={{ padding: '0 0 64px' }}>
-        <div style={{ width: '100%', background: '#f9f7f2', padding: '2.5rem 24px', borderTop: '1px solid #ece7dc', borderBottom: '1px solid #ece7dc' }}>
+        <div style={{ width: '100%', background: '#fff6fb', padding: '2.5rem 24px', borderTop: '1px solid rgba(96,18,18,0.16)', borderBottom: '1px solid rgba(96,18,18,0.16)' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-              <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Services</p>
-              <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#111827' }}>How I can support you</h2>
+              <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#601212', marginBottom: 12 }}>Services</p>
+              <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#1a1a1a' }}>How I can support you</h2>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
@@ -175,12 +175,12 @@ export default function Services() {
                   </svg>
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.6rem', color: '#111827' }}>How can I help?</h3>
-                  <p style={{ color: '#4b5563', margin: 0, lineHeight: 1.7 }}>
+                  <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.6rem', color: '#1a1a1a' }}>How can I help?</h3>
+                  <p style={{ color: '#1a1a1a', margin: 0, lineHeight: 1.7 }}>
                     Every person’s experience with pain is unique, so treatment is always tailored to you. Depending on your goals and what feels most helpful, your care may include a combination of:
                   </p>
                 </div>
-                <ul style={{ margin: 0, paddingLeft: '1rem', color: '#4b5563', display: 'grid', gap: '0.45rem' }}>
+                <ul style={{ margin: 0, paddingLeft: '1rem', color: '#1a1a1a', display: 'grid', gap: '0.45rem' }}>
                   <li>Movement and exercise therapy</li>
                   <li>Manual therapy techniques</li>
                   <li>Pain Education</li>
@@ -201,12 +201,12 @@ export default function Services() {
                   </svg>
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.6rem', color: '#111827' }}>Why choose in-home physiotherapy?</h3>
-                  <p style={{ color: '#4b5563', margin: 0, lineHeight: 1.7 }}>
+                  <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.6rem', color: '#1a1a1a' }}>Why choose in-home physiotherapy?</h3>
+                  <p style={{ color: '#1a1a1a', margin: 0, lineHeight: 1.7 }}>
                     Because your home is where life happens. Treating you in your own environment allows me to see how you move through your daily routines and identify challenges that aren’t visible in a clinic. That means treatment can focus on:
                   </p>
                 </div>
-                <ul style={{ margin: 0, paddingLeft: '1rem', color: '#4b5563', display: 'grid', gap: '0.45rem' }}>
+                <ul style={{ margin: 0, paddingLeft: '1rem', color: '#1a1a1a', display: 'grid', gap: '0.45rem' }}>
                   <li>Getting up from your favourite chair</li>
                   <li>Navigating stairs safely</li>
                   <li>Walking outdoors with confidence</li>
@@ -405,13 +405,13 @@ export default function Services() {
       </section>
 
       <section id="contact" style={{ padding: '0 24px 96px' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', borderTop: '1px solid #ece7dc', paddingTop: '2.5rem' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', borderTop: '1px solid rgba(96,18,18,0.16)', paddingTop: '2.5rem' }}>
           <div style={{ maxWidth: 700 }}>
-            <h2 style={{ fontSize: '1.8rem', margin: '0 0 0.75rem', color: '#111827' }}>Ready to book a session?</h2>
-            <p style={{ color: '#4b5563', marginBottom: '1.2rem', lineHeight: 1.7 }}>
+            <h2 style={{ fontSize: '1.8rem', margin: '0 0 0.75rem', color: '#1a1a1a' }}>Ready to book a session?</h2>
+            <p style={{ color: '#1a1a1a', marginBottom: '1.2rem', lineHeight: 1.7 }}>
               Reach out at +1 (289)-902-4044 or info@ajpt.ca and I’ll be happy to help. If you want, I can also share updates and wellness resources with you.
             </p>
-            <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #111827', padding: '12px 22px', color: '#111827', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem' }}>
+            <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #601212', background: '#601212', padding: '12px 22px', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 10px 18px rgba(96,18,18,0.12)' }}>
               Book a Session
             </a>
           </div>
