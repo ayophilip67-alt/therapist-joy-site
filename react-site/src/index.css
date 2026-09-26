@@ -53,10 +53,10 @@ img {
   left: 0;
   right: 0;
   z-index: 50;
-  background: rgba(255, 246, 251, 0.96);
-  backdrop-filter: blur(10px);
+  background: transparent;
+  backdrop-filter: none;
   border-bottom: 1px solid rgba(96, 18, 18, 0.18);
-  box-shadow: 0 8px 20px rgba(96, 18, 18, 0.08);
+  box-shadow: none;
 }
 
 .header-inner {
