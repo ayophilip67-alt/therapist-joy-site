@@ -283,75 +283,47 @@ export default function Services() {
                 <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#111827', marginBottom: '1rem' }}>Pricing</h2>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem', maxWidth: 760, margin: '0 auto' }}>
                 <div style={{ background: '#f9f7f2', border: '1px solid #ece7dc', padding: '2rem', borderRadius: 12 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                    <div style={{ width: 48, height: 48, borderRadius: '999px', background: '#fff', border: '1px solid #ece7dc', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M9 11l3 3L22 4" />
-                        <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <h3 style={{ fontSize: '1.3rem', margin: 0, color: '#111827' }}>Initial Assessments</h3>
-                  </div>
+                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#111827' }}>Initial Assessments</h3>
 
-                  <div style={{ display: 'grid', gap: '1.5rem' }}>
-                    <div style={{ borderBottom: '1px solid #e5e7eb', paddingBottom: '1rem' }}>
-                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.1rem' }}>90-Minute Assessment — $220</p>
-                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '0.75rem' }}>
-                        This is the right starting point if:
-                      </p>
-                      <ul style={{ margin: 0, paddingLeft: '1.2rem', color: '#6b7280', display: 'grid', gap: '0.3rem', fontSize: '0.9rem' }}>
-                        <li>You've been living with persistent or long-standing pain, especially if it's shifted, spread, or been hard to pin down over time</li>
-                        <li>You've tried other treatment before and it hasn't fully helped</li>
-                        <li>You're an older adult looking to build strength and independence at home, including a full-body assessment and balance/fall-risk evaluation</li>
-                        <li>Life stress, sleep, or mood feel connected to how your body is doing</li>
-                      </ul>
-                      <p style={{ margin: '0.75rem 0 0', color: '#6b7280', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                        We'll spend this time properly — going through your history in detail, assessing movement and function, and building a plan that actually fits your life.
+                  <div style={{ display: 'grid', gap: '1.25rem' }}>
+                    <div>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>90-Minute Assessment — $180</p>
+                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.7 }}>
+                        Best suited for persistent or complex pain, multiple areas of concern, or older adults needing a broader mobility and balance assessment.
                       </p>
                     </div>
 
                     <div>
-                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.1rem' }}>60-Minute Assessment — $180</p>
-                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '0.75rem' }}>
-                        This is the right starting point if:
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>60-Minute Assessment — $150</p>
+                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.7 }}>
+                        Best suited for a more focused concern, such as a single-region injury, recent flare-up, or post-surgical rehabilitation.
                       </p>
-                      <ul style={{ margin: 0, paddingLeft: '1.2rem', color: '#6b7280', display: 'grid', gap: '0.3rem', fontSize: '0.9rem' }}>
-                        <li>You have a clear, single-region issue (a strain, a sprain, a recent flare-up)</li>
-                        <li>You're coming in post-surgery with a defined surgical plan already in place</li>
-                        <li>Your goals are fairly specific and contained</li>
-                      </ul>
-                      <p style={{ margin: '0.75rem 0 0', color: '#6b7280', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                        If it turns out you need more time to do this properly, we'll talk about it together — no pressure, no surprises.
+                    </div>
+
+                    <div>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>60-Minute Vestibular Assessment — $170</p>
+                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.7 }}>
+                        For dizziness, balance concerns, vertigo, or other vestibular symptoms requiring a focused assessment.
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div style={{ background: '#f9f7f2', border: '1px solid #ece7dc', padding: '2rem', borderRadius: 12 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                    <div style={{ width: 48, height: 48, borderRadius: '999px', background: '#fff', border: '1px solid #ece7dc', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2" />
-                      </svg>
-                    </div>
-                    <h3 style={{ fontSize: '1.3rem', margin: 0, color: '#111827' }}>Follow-Up Sessions</h3>
-                  </div>
-
-                  <p style={{ margin: '0 0 1.5rem', color: '#6b7280', lineHeight: 1.7, fontSize: '0.95rem' }}>
-                    Follow-up sessions build on your assessment and typically include hands-on treatment, movement and exercise coaching, pain education, acupuncture if needed, and practical strategies for the parts of daily life you're working to get back.
+                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#111827' }}>Follow-Up Sessions</h3>
+                  <p style={{ margin: '0 0 1rem', color: '#6b7280', lineHeight: 1.7, fontSize: '0.95rem' }}>
+                    Follow-up sessions build on the treatment plan created during your assessment.
                   </p>
 
-                  <div style={{ display: 'grid', gap: '1.5rem' }}>
-                    <div style={{ borderBottom: '1px solid #e5e7eb', paddingBottom: '1rem' }}>
-                      <p style={{ margin: '0 0 0.3rem', fontWeight: 600, color: '#111827', fontSize: '1.1rem' }}>60-Minute Follow-Up — $170</p>
-                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.9rem' }}>Full session building on your assessment</p>
+                  <div style={{ display: 'grid', gap: '1.25rem' }}>
+                    <div>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>60-Minute Follow-Up — $150</p>
                     </div>
 
                     <div>
-                      <p style={{ margin: '0 0 0.3rem', fontWeight: 600, color: '#111827', fontSize: '1.1rem' }}>45-Minute Follow-Up — $140</p>
-                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.9rem' }}>Focused session once progress is underway</p>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>45-Minute Follow-Up — $125</p>
                     </div>
                   </div>
                 </div>
