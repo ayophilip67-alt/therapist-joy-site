@@ -72,7 +72,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: min(210px, 32vw);
+  width: min(150px, 24vw);
   min-width: 0;
   text-decoration: none;
 }
@@ -80,7 +80,7 @@ img {
 .header-brand img {
   display: block;
   width: 100%;
-  max-width: 180px;
+  max-width: 120px;
   height: auto;
   object-fit: contain;
   border-radius: 10px;
