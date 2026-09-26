@@ -50,10 +50,8 @@ img {
 .site-header {
   position: fixed;
   top: 0;
-  left: 50%;
-  width: min(76vw, 760px);
-  max-width: calc(100% - 24px);
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   z-index: 50;
   background: rgba(255, 246, 251, 0.96);
   backdrop-filter: blur(10px);
@@ -62,13 +60,14 @@ img {
 }
 
 .header-inner {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 8px 12px;
+  padding: 8px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  min-height: 52px;
 }
 
 .header-brand {
