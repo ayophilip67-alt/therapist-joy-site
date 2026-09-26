@@ -116,6 +116,10 @@ export default function Home() {
           display: block;
         }
 
+        .home-hero-image-mobile {
+          display: none;
+        }
+
         .home-hero-overlay {
           position: relative;
           z-index: 1;
@@ -184,6 +188,20 @@ export default function Home() {
         }
 
         @media (max-width: 560px) {
+          .home-hero-image {
+            display: none;
+          }
+
+          .home-hero-image-mobile {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 48%;
+            display: block;
+          }
+
           .home-hero-overlay {
             min-height: 62vh;
             padding-top: 64px;
@@ -199,10 +217,6 @@ export default function Home() {
           .home-hero-subtitle {
             letter-spacing: 0.1em;
           }
-
-          .home-hero-image {
-            object-position: center 55%;
-          }
         }
       `}</style>
 
@@ -210,6 +224,7 @@ export default function Home() {
 
       <section className="home-hero" aria-label="Healing at Home introduction">
         <img className="home-hero-image" src="/assets/homeimage.PNG" alt="Healing at Home physiotherapy room" />
+        <img className="home-hero-image-mobile" src="/assets/mobilehero.jpeg" alt="Healing at Home mobile hero" />
         <div className="home-hero-overlay">
           <div className="home-hero-content">
             <h1 className="home-hero-title">Healing at Home</h1>
