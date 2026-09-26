@@ -180,7 +180,7 @@ export default function Home() {
               That’s why I take the time to understand your experience, what’s important to you, and what you want to get back to doing. Care is tailored to you and moves at a pace that feels manageable, with the goal of helping you better understand your body, feel more confident in movement, and get back to more of what is meaningful to you.
             </p>
             <Link to="/about" style={{ display: 'inline-block', border: '1px solid #601212', background: '#601212', padding: '12px 20px', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', width: 'fit-content', marginTop: '0.5rem', boxShadow: '0 10px 20px rgba(96,18,18,0.12)' }}>
-              More on me
+              Learn more
             </Link>
           </div>
         </div>
