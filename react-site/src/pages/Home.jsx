@@ -157,7 +157,7 @@ export default function Home() {
             </Link>
           </div>
           <div style={{ order: 1 }}>
-            <img src="/assets/services.jpeg" alt="Physiotherapy treatment" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'cover', display: 'block' }} />
+            <img src="/assets/newservices.png" alt="Physiotherapy treatment" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'cover', display: 'block' }} />
           </div>
         </div>
       </section>
@@ -165,7 +165,7 @@ export default function Home() {
       <section id="about" style={{ padding: '80px 24px', background: '#fffefc' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
           <div>
-            <img src="/assets/ajpicture.jpg" alt="Akintomide Jumoke, Physiotherapist" style={{ width: '100%', height: 'auto', maxHeight: '560px', objectFit: 'cover', display: 'block' }} />
+            <img src="/assets/newaboutme.jpeg" alt="Akintomide Jumoke, Physiotherapist" style={{ width: '100%', height: 'auto', maxHeight: '560px', objectFit: 'cover', display: 'block' }} />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#601212', marginBottom: 4 }}>About</p>
