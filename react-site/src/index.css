@@ -59,13 +59,13 @@ img {
 }
 
 .header-inner {
-  max-width: 1024px;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 14px 20px;
+  padding: 10px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.5rem;
 }
 
 .header-brand {
