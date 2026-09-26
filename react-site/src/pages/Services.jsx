@@ -278,53 +278,53 @@ export default function Services() {
               </div>
             </div>
 
-            <div style={{ marginTop: '3rem', paddingTop: '3rem', borderTop: '1px solid #ece7dc' }}>
+            <div style={{ marginTop: '3rem', paddingTop: '3rem', borderTop: '1px solid rgba(96,18,18,0.18)', background: 'linear-gradient(135deg, #601212 0%, #7d2020 100%)', borderRadius: 24, padding: '2.5rem 1.5rem', boxShadow: '0 18px 32px rgba(96,18,18,0.18)' }}>
               <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 12 }}>Investment</p>
-                <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#111827', marginBottom: '1rem' }}>Pricing</h2>
+                <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)', marginBottom: 12 }}>Investment</p>
+                <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#fff', marginBottom: '1rem' }}>Pricing</h2>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem', maxWidth: 760, margin: '0 auto' }}>
-                <div style={{ background: 'linear-gradient(180deg, #fff6fb 0%, #fff 100%)', border: '1px solid rgba(96,18,18,0.18)', padding: '2rem', borderRadius: 12, boxShadow: '0 12px 20px rgba(96,18,18,0.05)' }}>
-                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#601212' }}>Initial Assessments</h3>
+                <div style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.18)', padding: '2rem', borderRadius: 12, boxShadow: '0 12px 20px rgba(0,0,0,0.08)' }}>
+                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#fff' }}>Initial Assessments</h3>
 
                   <div style={{ display: 'grid', gap: '1.25rem' }}>
                     <div>
-                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>90-Minute Assessment — $180</p>
-                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.7 }}>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#fff', fontSize: '1.05rem' }}>90-Minute Assessment — $180</p>
+                      <p style={{ margin: 0, color: 'rgba(255,255,255,0.82)', fontSize: '0.95rem', lineHeight: 1.7 }}>
                         Best suited for persistent or complex pain, multiple areas of concern, or older adults needing a broader mobility and balance assessment.
                       </p>
                     </div>
 
                     <div>
-                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>60-Minute Assessment — $150</p>
-                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.7 }}>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#fff', fontSize: '1.05rem' }}>60-Minute Assessment — $150</p>
+                      <p style={{ margin: 0, color: 'rgba(255,255,255,0.82)', fontSize: '0.95rem', lineHeight: 1.7 }}>
                         Best suited for a more focused concern, such as a single-region injury, recent flare-up, or post-surgical rehabilitation.
                       </p>
                     </div>
 
                     <div>
-                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>60-Minute Vestibular Assessment — $170</p>
-                      <p style={{ margin: 0, color: '#6b7280', fontSize: '0.95rem', lineHeight: 1.7 }}>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#fff', fontSize: '1.05rem' }}>60-Minute Vestibular Assessment — $170</p>
+                      <p style={{ margin: 0, color: 'rgba(255,255,255,0.82)', fontSize: '0.95rem', lineHeight: 1.7 }}>
                         For dizziness, balance concerns, vertigo, or other vestibular symptoms requiring a focused assessment.
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div style={{ background: 'linear-gradient(180deg, #fff6fb 0%, #fff 100%)', border: '1px solid rgba(96,18,18,0.18)', padding: '2rem', borderRadius: 12, boxShadow: '0 12px 20px rgba(96,18,18,0.05)' }}>
-                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#601212' }}>Follow-Up Sessions</h3>
-                  <p style={{ margin: '0 0 1rem', color: '#6b7280', lineHeight: 1.7, fontSize: '0.95rem' }}>
+                <div style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.18)', padding: '2rem', borderRadius: 12, boxShadow: '0 12px 20px rgba(0,0,0,0.08)' }}>
+                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#fff' }}>Follow-Up Sessions</h3>
+                  <p style={{ margin: '0 0 1rem', color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, fontSize: '0.95rem' }}>
                     Follow-up sessions build on the treatment plan created during your assessment.
                   </p>
 
                   <div style={{ display: 'grid', gap: '1.25rem' }}>
                     <div>
-                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>60-Minute Follow-Up — $150</p>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#fff', fontSize: '1.05rem' }}>60-Minute Follow-Up — $150</p>
                     </div>
 
                     <div>
-                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#111827', fontSize: '1.05rem' }}>45-Minute Follow-Up — $125</p>
+                      <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#fff', fontSize: '1.05rem' }}>45-Minute Follow-Up — $125</p>
                     </div>
                   </div>
                 </div>
