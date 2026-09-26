@@ -67,7 +67,7 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  min-height: 50px;
+  min-height: 40px;
 }
 
 .header-brand {
@@ -206,7 +206,8 @@ img {
 
 @media (max-width: 640px) {
   .header-inner {
-    padding: 14px 16px;
+    padding: 0 16px;
+    min-height: 40px;
   }
 }
 
