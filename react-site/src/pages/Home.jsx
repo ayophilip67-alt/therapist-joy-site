@@ -101,38 +101,124 @@ export default function Home() {
     <main style={{ fontFamily: '"Jost", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', lineHeight: 1.6, color: '#1b1b1b', background: '#fff6fb' }}>
       <style>{`
         .home-hero {
-          background-position: center center;
+          position: relative;
+          overflow: hidden;
+          background: #f5efe6;
+        }
+
+        .home-hero-image {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center 50%;
+          display: block;
+        }
+
+        .home-hero-overlay {
+          position: relative;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          min-height: 100vh;
+          padding: 110px 20px 70px;
+          background: linear-gradient(90deg, rgba(245, 239, 230, 0.7) 0%, rgba(245, 239, 230, 0.2) 35%, rgba(245, 239, 230, 0.1) 100%);
+        }
+
+        .home-hero-content {
+          max-width: 760px;
+          color: #601212;
+          padding-left: 8vw;
+        }
+
+        .home-hero-title {
+          font-size: clamp(3rem, 7vw, 9rem);
+          line-height: 0.95;
+          letter-spacing: -0.06em;
+          font-family: Georgia, 'Times New Roman', serif;
+          font-weight: 700;
+          margin: 0;
+          color: #601212;
+        }
+
+        .home-hero-subtitle {
+          margin-top: 1.2rem;
+          font-size: clamp(1.05rem, 2vw, 2.1rem);
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: #601212;
+          opacity: 0.9;
+        }
+
+        .home-hero-divider {
+          width: min(100%, 520px);
+          height: 2px;
+          background: rgba(96, 18, 18, 0.5);
+          margin: 1.6rem 0 1.2rem;
+        }
+
+        .home-hero-location {
+          font-size: clamp(1.1rem, 2vw, 2.1rem);
+          font-style: italic;
+          color: #601212;
+          margin: 0;
         }
 
         @media (max-width: 900px) {
-          .home-hero {
-            min-height: 70vh !important;
-            background-position: center 18%;
-            background-size: cover;
+          .home-hero-overlay {
+            min-height: 72vh;
+            padding-top: 96px;
+            padding-bottom: 38px;
+          }
+
+          .home-hero-content {
+            max-width: 620px;
+            padding-left: 4vw;
+          }
+
+          .home-hero-image {
+            object-position: center 42%;
           }
         }
 
         @media (max-width: 560px) {
-          .home-hero {
-            min-height: 52vh !important;
-            background-position: center 22%;
-            background-size: cover;
-            padding-top: 100px;
-            padding-bottom: 30px;
+          .home-hero-overlay {
+            min-height: 62vh;
+            padding-top: 64px;
+            padding-bottom: 28px;
+            align-items: flex-start;
           }
-        }
 
-        @media (max-width: 390px) {
-          .home-hero {
-            min-height: 48vh !important;
-            background-position: center 18%;
+          .home-hero-content {
+            padding-left: 0;
+            max-width: 90%;
+          }
+
+          .home-hero-subtitle {
+            letter-spacing: 0.1em;
+          }
+
+          .home-hero-image {
+            object-position: center 55%;
           }
         }
       `}</style>
 
       <Header currentPage="home" />
 
-      <section className="home-hero" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '110px 20px 70px', backgroundImage: 'url(/assets/homeimage.PNG)', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', color: '#fff' }} />
+      <section className="home-hero" aria-label="Healing at Home introduction">
+        <img className="home-hero-image" src="/assets/homeimage.PNG" alt="Healing at Home physiotherapy room" />
+        <div className="home-hero-overlay">
+          <div className="home-hero-content">
+            <h1 className="home-hero-title">Healing at Home</h1>
+            <div className="home-hero-subtitle">Mobile Physiotherapy</div>
+            <div className="home-hero-divider" />
+            <p className="home-hero-location">Serving Hamilton • Ancaster • Dundas</p>
+          </div>
+        </div>
+      </section>
 
       <div style={{ background: '#1a1a1a', color: '#fff6fb', padding: '0.85rem 1rem', overflow: 'hidden', whiteSpace: 'nowrap' }}>
         <div style={{ display: 'inline-block', paddingLeft: '100%', animation: 'marquee 18s linear infinite' }}>
