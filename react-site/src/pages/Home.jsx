@@ -106,15 +106,15 @@ export default function Home() {
 
         @media (max-width: 768px) {
           .home-hero {
-            min-height: 72vh;
-            background-position: center top;
+            min-height: 72vh !important;
+            background-position: center 24%;
           }
         }
 
         @media (max-width: 480px) {
           .home-hero {
-            min-height: 62vh;
-            background-position: center 18%;
+            min-height: 58vh !important;
+            background-position: center 22%;
           }
         }
       `}</style>
