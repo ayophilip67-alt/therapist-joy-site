@@ -130,56 +130,11 @@ export default function Home() {
           background: linear-gradient(90deg, rgba(245, 239, 230, 0.7) 0%, rgba(245, 239, 230, 0.2) 35%, rgba(245, 239, 230, 0.1) 100%);
         }
 
-        .home-hero-content {
-          max-width: 760px;
-          color: #601212;
-          padding-left: 8vw;
-        }
-
-        .home-hero-title {
-          font-size: clamp(3rem, 7vw, 9rem);
-          line-height: 0.95;
-          letter-spacing: -0.06em;
-          font-family: Georgia, 'Times New Roman', serif;
-          font-weight: 700;
-          margin: 0;
-          color: #601212;
-        }
-
-        .home-hero-subtitle {
-          margin-top: 1.2rem;
-          font-size: clamp(1.05rem, 2vw, 2.1rem);
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-          font-weight: 500;
-          color: #601212;
-          opacity: 0.9;
-        }
-
-        .home-hero-divider {
-          width: min(100%, 520px);
-          height: 2px;
-          background: rgba(96, 18, 18, 0.5);
-          margin: 1.6rem 0 1.2rem;
-        }
-
-        .home-hero-location {
-          font-size: clamp(1.1rem, 2vw, 2.1rem);
-          font-style: italic;
-          color: #601212;
-          margin: 0;
-        }
-
         @media (max-width: 900px) {
           .home-hero-overlay {
             min-height: 72vh;
             padding-top: 96px;
             padding-bottom: 38px;
-          }
-
-          .home-hero-content {
-            max-width: 620px;
-            padding-left: 4vw;
           }
 
           .home-hero-image {
@@ -208,36 +163,7 @@ export default function Home() {
             padding-bottom: 24px;
             align-items: flex-start;
             background: none;
-          }
-
-          .home-hero-content {
-            padding-left: 0;
-            max-width: 100%;
-            width: 100%;
-          }
-
-          .home-hero-title {
-            font-size: clamp(3rem, 18vw, 6rem);
-            line-height: 0.8;
-            letter-spacing: -0.06em;
-            color: #601212;
-          }
-
-          .home-hero-subtitle {
-            margin-top: 0.7rem;
-            font-size: clamp(0.9rem, 4vw, 1.75rem);
-            letter-spacing: 0.12em;
-            color: #601212;
-          }
-
-          .home-hero-divider {
-            width: min(100%, 420px);
-            margin: 0.8rem 0 0.75rem;
-          }
-
-          .home-hero-location {
-            font-size: clamp(0.95rem, 4vw, 1.45rem);
-            color: #601212;
+            display: none;
           }
         }
       `}</style>
@@ -247,14 +173,6 @@ export default function Home() {
       <section className="home-hero" aria-label="Healing at Home introduction">
         <img className="home-hero-image" src="/assets/homeimage.PNG" alt="Healing at Home physiotherapy room" />
         <img className="home-hero-image-mobile" src="/assets/mobilehero.jpeg" alt="Healing at Home mobile hero" />
-        <div className="home-hero-overlay">
-          <div className="home-hero-content">
-            <h1 className="home-hero-title">Healing at Home</h1>
-            <div className="home-hero-subtitle">Mobile Physiotherapy</div>
-            <div className="home-hero-divider" />
-            <p className="home-hero-location">Serving Hamilton • Ancaster • Dundas</p>
-          </div>
-        </div>
       </section>
 
       <div style={{ background: '#1a1a1a', color: '#fff6fb', padding: '0.85rem 1rem', overflow: 'hidden', whiteSpace: 'nowrap' }}>
