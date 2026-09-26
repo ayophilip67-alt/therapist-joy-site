@@ -58,15 +58,16 @@ function FAQ() {
           display: 'block',
           margin: '0 auto 2rem',
           padding: '12px 24px',
-          background: '#111827',
+          background: '#601212',
           color: '#fff',
-          border: 'none',
-          borderRadius: 6,
+          border: '1px solid #601212',
+          borderRadius: 999,
           cursor: 'pointer',
           textTransform: 'uppercase',
           letterSpacing: '0.2em',
           fontSize: '0.8rem',
-          fontWeight: 500,
+          fontWeight: 700,
+          boxShadow: '0 12px 25px rgba(96,18,18,0.12)',
         }}
       >
         {faqOpen ? 'Hide Questions' : 'Show Questions'}
@@ -163,7 +164,7 @@ export default function Services() {
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
               <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#601212', marginBottom: 12 }}>Services</p>
-              <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#1a1a1a' }}>How I can support you</h2>
+              <h2 style={{ fontSize: '2rem', margin: 0, lineHeight: 1.15, color: '#601212' }}>How I can support you</h2>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
@@ -284,8 +285,8 @@ export default function Services() {
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem', maxWidth: 760, margin: '0 auto' }}>
-                <div style={{ background: '#f9f7f2', border: '1px solid #ece7dc', padding: '2rem', borderRadius: 12 }}>
-                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#111827' }}>Initial Assessments</h3>
+                <div style={{ background: 'linear-gradient(180deg, #fff6fb 0%, #fff 100%)', border: '1px solid rgba(96,18,18,0.18)', padding: '2rem', borderRadius: 12, boxShadow: '0 12px 20px rgba(96,18,18,0.05)' }}>
+                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#601212' }}>Initial Assessments</h3>
 
                   <div style={{ display: 'grid', gap: '1.25rem' }}>
                     <div>
@@ -311,8 +312,8 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div style={{ background: '#f9f7f2', border: '1px solid #ece7dc', padding: '2rem', borderRadius: 12 }}>
-                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#111827' }}>Follow-Up Sessions</h3>
+                <div style={{ background: 'linear-gradient(180deg, #fff6fb 0%, #fff 100%)', border: '1px solid rgba(96,18,18,0.18)', padding: '2rem', borderRadius: 12, boxShadow: '0 12px 20px rgba(96,18,18,0.05)' }}>
+                  <h3 style={{ fontSize: '1.3rem', margin: '0 0 1rem', color: '#601212' }}>Follow-Up Sessions</h3>
                   <p style={{ margin: '0 0 1rem', color: '#6b7280', lineHeight: 1.7, fontSize: '0.95rem' }}>
                     Follow-up sessions build on the treatment plan created during your assessment.
                   </p>
@@ -332,8 +333,8 @@ export default function Services() {
 
             <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #ece7dc' }}>
               <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-                <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#6b7280', marginBottom: 8 }}>What to Expect</p>
-                <h3 style={{ fontSize: '1.6rem', margin: 0, lineHeight: 1.2, color: '#111827' }}>What to Expect at Your First Visit</h3>
+                <p style={{ textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.8rem', color: '#cda275', marginBottom: 8 }}>What to Expect</p>
+                <h3 style={{ fontSize: '1.6rem', margin: 0, lineHeight: 1.2, color: '#fff' }}>What to Expect at Your First Visit</h3>
               </div>
               <div style={{ position: 'relative', overflow: 'hidden', borderRadius: 24, border: '1px solid #ece7dc', minHeight: 420, background: '#111827' }}>
                 <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(180deg, rgba(17,24,39,0.78) 0%, rgba(17,24,39,0.64) 35%, rgba(17,24,39,0.85) 100%), url(/assets/expect-session-DkQk4Cij.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.7)', zIndex: 0 }} />
@@ -378,14 +379,17 @@ export default function Services() {
 
       <section id="contact" style={{ padding: '0 24px 96px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', borderTop: '1px solid rgba(96,18,18,0.16)', paddingTop: '2.5rem' }}>
-          <div style={{ maxWidth: 700 }}>
-            <h2 style={{ fontSize: '1.8rem', margin: '0 0 0.75rem', color: '#1a1a1a' }}>Ready to book a session?</h2>
-            <p style={{ color: '#1a1a1a', marginBottom: '1.2rem', lineHeight: 1.7 }}>
-              Reach out at +1 (289)-902-4044 or info@ajpt.ca and I’ll be happy to help. If you want, I can also share updates and wellness resources with you.
-            </p>
-            <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #601212', background: '#601212', padding: '12px 22px', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 10px 18px rgba(96,18,18,0.12)' }}>
-              Book a Session
-            </a>
+          <div style={{ background: 'linear-gradient(135deg, #601212 0%, #7d2020 100%)', borderRadius: 24, padding: '2.25rem 2rem', boxShadow: '0 22px 40px rgba(96,18,18,0.18)', color: '#fff' }}>
+            <div style={{ maxWidth: 700, display: 'grid', gap: '1rem' }}>
+              <p style={{ margin: 0, textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.75rem', color: 'rgba(255,255,255,0.78)' }}>Ready to book a session?</p>
+              <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', margin: 0, lineHeight: 1.15, color: '#fff' }}>Support that meets you where you are.</h2>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #cda275', background: '#fff6fb', padding: '12px 22px', color: '#601212', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', fontWeight: 700, boxShadow: '0 12px 22px rgba(20, 10, 10, 0.12)' }}>
+                  Book a Session
+                </a>
+                <span style={{ color: 'rgba(255,255,255,0.82)', fontSize: '0.95rem' }}>Hamilton · Ancaster · Dundas</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
