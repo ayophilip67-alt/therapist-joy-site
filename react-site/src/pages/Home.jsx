@@ -198,32 +198,46 @@ export default function Home() {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center 48%;
+            object-position: center 50%;
             display: block;
           }
 
           .home-hero-overlay {
             min-height: 62vh;
-            padding-top: 64px;
-            padding-bottom: 28px;
+            padding-top: 58px;
+            padding-bottom: 24px;
             align-items: flex-start;
             background: none;
           }
 
           .home-hero-content {
             padding-left: 0;
-            max-width: 90%;
+            max-width: 100%;
+            width: 100%;
           }
 
-          .home-hero-title,
-          .home-hero-subtitle,
-          .home-hero-location {
+          .home-hero-title {
+            font-size: clamp(3rem, 18vw, 6rem);
+            line-height: 0.8;
+            letter-spacing: -0.06em;
             color: #601212;
-            text-shadow: none;
           }
 
           .home-hero-subtitle {
-            letter-spacing: 0.1em;
+            margin-top: 0.7rem;
+            font-size: clamp(0.9rem, 4vw, 1.75rem);
+            letter-spacing: 0.12em;
+            color: #601212;
+          }
+
+          .home-hero-divider {
+            width: min(100%, 420px);
+            margin: 0.8rem 0 0.75rem;
+          }
+
+          .home-hero-location {
+            font-size: clamp(0.95rem, 4vw, 1.45rem);
+            color: #601212;
           }
         }
       `}</style>
