@@ -99,9 +99,29 @@ export default function Home() {
 
   return (
     <main style={{ fontFamily: '"Jost", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', lineHeight: 1.6, color: '#1b1b1b', background: '#fff6fb' }}>
+      <style>{`
+        .home-hero {
+          background-position: center center;
+        }
+
+        @media (max-width: 768px) {
+          .home-hero {
+            min-height: 72vh;
+            background-position: center top;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .home-hero {
+            min-height: 62vh;
+            background-position: center 18%;
+          }
+        }
+      `}</style>
+
       <Header currentPage="home" />
 
-      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '110px 20px 70px', backgroundImage: 'url(/assets/homeimage.PNG)', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', color: '#fff' }} />
+      <section className="home-hero" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '110px 20px 70px', backgroundImage: 'url(/assets/homeimage.PNG)', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', color: '#fff' }} />
 
       <div style={{ background: '#1a1a1a', color: '#fff6fb', padding: '0.85rem 1rem', overflow: 'hidden', whiteSpace: 'nowrap' }}>
         <div style={{ display: 'inline-block', paddingLeft: '100%', animation: 'marquee 18s linear infinite' }}>
