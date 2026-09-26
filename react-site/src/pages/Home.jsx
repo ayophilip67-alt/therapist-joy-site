@@ -207,11 +207,19 @@ export default function Home() {
             padding-top: 64px;
             padding-bottom: 28px;
             align-items: flex-start;
+            background: none;
           }
 
           .home-hero-content {
             padding-left: 0;
             max-width: 90%;
+          }
+
+          .home-hero-title,
+          .home-hero-subtitle,
+          .home-hero-location {
+            color: #601212;
+            text-shadow: none;
           }
 
           .home-hero-subtitle {
