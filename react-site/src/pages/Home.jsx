@@ -267,8 +267,9 @@ export default function Home() {
       <footer style={{ padding: '24px', background: '#fff6fb', borderTop: '1px solid rgba(96,18,18,0.15)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
           <div>
-            <p style={{ fontSize: '1.05rem', margin: 0, color: '#111827' }}>Akintomide Jumoke</p>
+            <p style={{ fontSize: '1.05rem', margin: 0, color: '#111827' }}>Healing at Home</p>
             <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#6b7280' }}>Chronic Pain Physical Therapist</p>
+            <p style={{ fontSize: '0.75rem', color: '#601212', marginTop: '0.25rem' }}>© {new Date().getFullYear()} Healing at Home</p>
           </div>
           <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>
             <a href="#services" style={{ color: '#6b7280', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '0.75rem' }}>Services</a>

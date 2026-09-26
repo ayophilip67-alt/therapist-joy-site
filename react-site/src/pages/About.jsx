@@ -11,7 +11,7 @@ export default function About() {
         <div style={{ maxWidth: 960, width: '100%', textAlign: 'center' }}>
           <p style={{ textTransform: 'uppercase', letterSpacing: '0.3em', fontSize: '0.85rem', marginBottom: 16, color: '#601212' }}>About</p>
           <h1 style={{ fontSize: 'clamp(2.4rem, 4vw, 4.6rem)', lineHeight: 1.1, margin: '0 0 18px', fontWeight: 400, fontFamily: 'Halimun, Jost, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', color: '#1a1a1a' }}>
-            Akintomide Jumoke
+            Olajumoke Akintomide
           </h1>
           <p style={{ fontSize: '1rem', letterSpacing: '0.3em', textTransform: 'uppercase', opacity: 0.8, color: '#cda275' }}>
             Registered Physiotherapist
@@ -76,14 +76,14 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section style={{ padding: '96px 24px 120px', background: '#1a1a1a', color: '#fff6fb' }}>
+      <section style={{ padding: '96px 24px 120px', background: '#601212', color: '#fff' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ textTransform: 'uppercase', letterSpacing: '0.3em', fontSize: '0.8rem', color: '#cda275', marginBottom: 16 }}>Ready to get started?</p>
-          <h2 style={{ fontSize: '2.3rem', margin: '0 0 1rem', lineHeight: 1.15, color: '#fff6fb' }}>Let's Work Together</h2>
-          <p style={{ color: 'rgba(255,246,251,0.82)', marginBottom: '2rem', lineHeight: 1.8 }}>
+          <p style={{ textTransform: 'uppercase', letterSpacing: '0.3em', fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)', marginBottom: 16 }}>Ready to get started?</p>
+          <h2 style={{ fontSize: '2.3rem', margin: '0 0 1rem', lineHeight: 1.15, color: '#fff' }}>Let's Work Together</h2>
+          <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '2rem', lineHeight: 1.8 }}>
             Ready to take the next step toward feeling better? Get in touch to book a session or ask any questions.
           </p>
-          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #cda275', background: '#601212', padding: '14px 24px', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 24px rgba(96,18,18,0.22)' }}>
+          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #cda275', background: '#fff', color: '#601212', padding: '14px 24px', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 24px rgba(0,0,0,0.12)' }}>
             Book a Session
           </a>
         </div>
@@ -92,8 +92,9 @@ export default function About() {
       <footer style={{ padding: '24px', background: '#fff6fb', borderTop: '1px solid rgba(96,18,18,0.15)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
           <div>
-            <p style={{ fontSize: '1.05rem', margin: 0, color: '#1a1a1a' }}>Akintomide Jumoke</p>
+            <p style={{ fontSize: '1.05rem', margin: 0, color: '#1a1a1a' }}>Healing at Home</p>
             <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#601212' }}>Chronic Pain Physical Therapist</p>
+            <p style={{ fontSize: '0.75rem', color: '#601212', marginTop: '0.25rem' }}>© {new Date().getFullYear()} Healing at Home</p>
           </div>
           <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>
             <a href="/#/services" style={{ color: '#601212', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '0.75rem' }}>Services</a>
