@@ -194,8 +194,17 @@ export default function Home() {
         <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
           <p style={{ textTransform: 'uppercase', letterSpacing: '0.3em', fontSize: '0.8rem', color: 'rgba(249,250,251,0.6)', marginBottom: 16 }}>Ready to get started? Reach out today!</p>
           <h2 style={{ fontSize: '2.3rem', margin: '0 0 1rem', lineHeight: 1.15 }}>Experienced Therapist. Comfortable Space.</h2>
+          <p style={{ color: 'rgba(249,250,251,0.75)', marginBottom: '1rem', lineHeight: 1.8 }}>
+            Have a question about physiotherapy, in-home care, or whether Healing at Home is the right fit for you? Feel free to get in touch.
+          </p>
+          <p style={{ color: 'rgba(249,250,251,0.9)', marginBottom: '0.5rem', lineHeight: 1.8, fontWeight: 500 }}>
+            Phone: +1 (289) 902-4044
+          </p>
+          <p style={{ color: 'rgba(249,250,251,0.9)', marginBottom: '1.5rem', lineHeight: 1.8, fontWeight: 500 }}>
+            Email: info@ajpt.ca
+          </p>
           <p style={{ color: 'rgba(249,250,251,0.75)', marginBottom: '2rem', lineHeight: 1.8 }}>
-            Living with persistent pain can be frustrating, especially when you’ve tried different things and are still feeling stuck. If you’re looking for a space where your experience is heard and we move at a pace that feels right for you, you’re welcome to get in touch at +1 (289)-902-4044 or info@ajpt.ca. My availability: Monday | Thursday | Saturday.
+            Ready to get started? Click Book Now to view available appointments and choose the service that best fits your needs.
           </p>
           <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #cda275', background: '#601212', padding: '14px 24px', color: '#fff', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 24px rgba(96,18,18,0.26)' }}>
             Book a Session
