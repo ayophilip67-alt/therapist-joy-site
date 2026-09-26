@@ -146,7 +146,7 @@ export default function Home() {
 
       <section className="home-hero" aria-label="Healing at Home hero image">
         <img className="home-hero-image" src="/assets/homeimage.PNG" alt="Healing at Home hero" />
-        <img className="home-hero-image-mobile" src="/assets/mobilehero.jpeg" alt="Healing at Home mobile hero" />
+        <img className="home-hero-image-mobile" src="/assets/mobilehero2.jpeg" alt="Healing at Home mobile hero" />
       </section>
 
       <div style={{ background: '#1a1a1a', color: '#fff6fb', padding: '0.85rem 1rem', overflow: 'hidden', whiteSpace: 'nowrap' }}>
