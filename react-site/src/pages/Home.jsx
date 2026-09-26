@@ -104,21 +104,28 @@ export default function Home() {
           background-position: center center;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
           .home-hero {
-            min-height: 72vh !important;
-            background-size: contain !important;
-            background-position: center center !important;
-            background-color: #f4efe8;
+            min-height: 70vh !important;
+            background-position: center 18%;
+            background-size: cover;
           }
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 560px) {
           .home-hero {
-            min-height: 54vh !important;
-            background-size: contain !important;
-            background-position: center center !important;
-            background-color: #f4efe8;
+            min-height: 52vh !important;
+            background-position: center 22%;
+            background-size: cover;
+            padding-top: 100px;
+            padding-bottom: 30px;
+          }
+        }
+
+        @media (max-width: 390px) {
+          .home-hero {
+            min-height: 48vh !important;
+            background-position: center 18%;
           }
         }
       `}</style>
