@@ -62,12 +62,12 @@ img {
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8px 24px;
+  padding: 0 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  min-height: 52px;
+  min-height: 50px;
 }
 
 .header-brand {
