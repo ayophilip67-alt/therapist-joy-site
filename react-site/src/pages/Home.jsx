@@ -258,7 +258,7 @@ export default function Home() {
           <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '2rem', lineHeight: 1.8 }}>
             Ready to get started? Click Book Now to view available appointments and choose the service that best fits your needs.
           </p>
-          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #cda275', background: '#fff', padding: '14px 24px', color: '#601212', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 24px rgba(0,0,0,0.12)' }}>
+          <a href="https://healingathome.embodiaapp.com/patient_portal" onClick={(e) => { e.preventDefault(); gtag_report_conversion('https://healingathome.embodiaapp.com/patient_portal'); }} style={{ display: 'inline-block', border: '1px solid #cda275', background: '#fff', padding: '14px 24px', color: '#601212', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 24px rgba(0,0,0,0.12)' }}>
             Book a Session
           </a>
         </div>

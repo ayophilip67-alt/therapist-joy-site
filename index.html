@@ -16,8 +16,22 @@
       gtag('js', new Date());
       gtag('config', 'AW-18149654034');
     </script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18149654034/cXecCJLGj5IdEJL8ts5D',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
     <title>Healing at Home | Mobile Physiotherapy</title>
-    <script type="module" crossorigin src="/assets/index-C8ZumZg1.js"></script>
+    <script type="module" crossorigin src="/assets/index-JHQgH1Wz.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-hlzo6XsF.css">
   </head>
   <body>

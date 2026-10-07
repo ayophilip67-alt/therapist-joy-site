@@ -61,7 +61,14 @@ export default function Header({ currentPage = 'home' }) {
                 </Link>
               )
             ))}
-            <a className="header-cta" href="https://healingathome.embodiaapp.com/patient_portal">
+            <a
+              className="header-cta"
+              href="https://healingathome.embodiaapp.com/patient_portal"
+              onClick={(e) => {
+                e.preventDefault();
+                gtag_report_conversion('https://healingathome.embodiaapp.com/patient_portal');
+              }}
+            >
               Book Now
             </a>
           </div>
@@ -113,7 +120,15 @@ export default function Header({ currentPage = 'home' }) {
                 )
               ))}
             </nav>
-            <a className="drawer-book" href="https://healingathome.embodiaapp.com/patient_portal" onClick={handleLinkClick}>
+            <a
+              className="drawer-book"
+              href="https://healingathome.embodiaapp.com/patient_portal"
+              onClick={(e) => {
+                handleLinkClick();
+                e.preventDefault();
+                gtag_report_conversion('https://healingathome.embodiaapp.com/patient_portal');
+              }}
+            >
               Book Now
             </a>
           </div>

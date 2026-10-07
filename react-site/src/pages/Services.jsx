@@ -384,7 +384,7 @@ export default function Services() {
               <p style={{ margin: 0, textTransform: 'uppercase', letterSpacing: '0.25em', fontSize: '0.75rem', color: 'rgba(255,255,255,0.78)' }}>Ready to book a session?</p>
               <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', margin: 0, lineHeight: 1.15, color: '#fff' }}>Support that meets you where you are.</h2>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-                <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #cda275', background: '#fff6fb', padding: '12px 22px', color: '#601212', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', fontWeight: 700, boxShadow: '0 12px 22px rgba(20, 10, 10, 0.12)' }}>
+                <a href="https://healingathome.embodiaapp.com/patient_portal" onClick={(e) => { e.preventDefault(); gtag_report_conversion('https://healingathome.embodiaapp.com/patient_portal'); }} style={{ display: 'inline-block', border: '1px solid #cda275', background: '#fff6fb', padding: '12px 22px', color: '#601212', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', fontWeight: 700, boxShadow: '0 12px 22px rgba(20, 10, 10, 0.12)' }}>
                   Book a Session
                 </a>
                 <span style={{ color: 'rgba(255,255,255,0.82)', fontSize: '0.95rem' }}>Hamilton · Ancaster · Dundas</span>

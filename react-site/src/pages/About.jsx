@@ -83,7 +83,7 @@ export default function About() {
           <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '2rem', lineHeight: 1.8 }}>
             Ready to take the next step toward feeling better? Get in touch to book a session or ask any questions.
           </p>
-          <a href="https://healingathome.embodiaapp.com/patient_portal" style={{ display: 'inline-block', border: '1px solid #cda275', background: '#fff', color: '#601212', padding: '14px 24px', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 24px rgba(0,0,0,0.12)' }}>
+          <a href="https://healingathome.embodiaapp.com/patient_portal" onClick={(e) => { e.preventDefault(); gtag_report_conversion('https://healingathome.embodiaapp.com/patient_portal'); }} style={{ display: 'inline-block', border: '1px solid #cda275', background: '#fff', color: '#601212', padding: '14px 24px', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.8rem', boxShadow: '0 12px 24px rgba(0,0,0,0.12)' }}>
             Book a Session
           </a>
         </div>
